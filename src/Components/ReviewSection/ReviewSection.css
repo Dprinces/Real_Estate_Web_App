@@ -1,0 +1,57 @@
+
+
+.review-title {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-weight: 800;
+    position: relative;
+    font-size: 1.5vw; 
+} 
+
+.span-title {
+    color: #008A4C;
+}
+
+.border-bottom {
+    border-bottom: 4px solid #008A4C; 
+    border-end-end-radius: 1rem;
+    width: 5%;
+    text-align: center;
+    margin: 1px auto;
+}
+
+.review-container {
+  width: 100%;
+  height: 348px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  position: relative;
+}
+
+.review-container .client-container {
+    position: relative;
+    width: 350px;
+    color: #fff;
+    background-color: #222;
+    margin: 40px 10px;
+    padding: 30px 20px;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.client-info {
+    text-align: center;
+}
+
+.review-container .client-container .client-pic {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10%;
+
+    
+   
+
+}
