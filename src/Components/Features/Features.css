@@ -1,0 +1,33 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 2.5rem auto 5rem 6%;
+}
+
+.grid-one {
+  font-size: 2rem;
+}
+
+.grid-two img {
+  transition: transform 0.3s;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.grid-two:hover img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+.grid-three img {
+  transition: transform 0.3s;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.grid-three:hover img {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
