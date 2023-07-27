@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../Common/Header/Navbar'
+import Footer from '../Common/Footer/Footer';
 import './ScheduleInspection.css'
  
 
@@ -123,8 +124,9 @@ export default function ScheduleInspection() {
             </label>
             <button type="submit">Schedule Inspection</button>
           </form>
-        </div>
+        </div> 
       </div>
+     <Footer />
     </>
   );
 };
