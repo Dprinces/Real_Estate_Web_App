@@ -1,7 +1,13 @@
+.btn-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
 .btn {
+ 
   border: none;
   background: transparent;
-  padding: 6px 16px;
+  padding: 6px 20px 6px 43px;
   font-size: 1.1rem;
   color: white;
   background: #008A4C;
@@ -14,3 +20,14 @@
   color: rgb(0, 212, 212);
   /* background: white; */
 }
+
+.profile-icon {
+  /* margin-left: 0.5rem; */
+  width: 24px; 
+  height: 24px;
+ position: absolute;
+ top: 13%;
+ left: 8%;
+ bottom: 0;
+
+} 
