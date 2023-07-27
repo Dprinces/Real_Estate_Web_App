@@ -23,7 +23,6 @@ export default function ScheduleInspection() {
      });
    };
 
-   // Handle form submission
    const handleSubmit = (e) => {
      e.preventDefault();
      console.log(formData);
@@ -40,7 +39,7 @@ export default function ScheduleInspection() {
         <h1>Schedule Inspection</h1>
         <form onSubmit={handleSubmit}>
           <label>
-            Full Name:
+            Name:
             <input
               type="text"
               name="fullName"
@@ -62,7 +61,7 @@ export default function ScheduleInspection() {
             />
           </label>
           <label>
-            Phone Number:
+            Phone:
             <input
               type="tel"
               name="phoneNumber"
