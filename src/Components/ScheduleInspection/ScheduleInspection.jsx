@@ -30,13 +30,14 @@ export default function ScheduleInspection() {
   
 
   return (
-    <div>
+    <>
       <Navbar />
       <div className="hero-section">
         <h1>Welcome to Our Inspection Scheduler</h1>
-      </div>
+      </div><h2>Schedule Inspection</h2>
+      
       <div className="form-container">
-        <h1>Schedule Inspection</h1>
+        
         <form onSubmit={handleSubmit}>
           <label>
             Name:
@@ -132,7 +133,7 @@ export default function ScheduleInspection() {
           <button type="submit">Schedule Inspection</button>
         </form>
       </div>
-    </div>
+    </>
   );
 };
 
