@@ -33,8 +33,8 @@ export default function ScheduleInspection() {
     <>
       <Navbar />
       <div className="hero-section">
-        <h1>Welcome to Our Inspection Scheduler</h1>
-      </div><h2>Schedule Inspection</h2>
+        <h1>Schedule Inspection</h1>
+      </div>
       
       <div className="form-container">
         
