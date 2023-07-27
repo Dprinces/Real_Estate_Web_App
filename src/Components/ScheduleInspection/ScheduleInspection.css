@@ -25,6 +25,24 @@
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.form-container .image-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.form-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.form-container form {
+  flex: 2;
 }
 
 .form-container h1 {
@@ -40,7 +58,7 @@
 .form-container input,
 .form-container textarea,
 .form-container select {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;

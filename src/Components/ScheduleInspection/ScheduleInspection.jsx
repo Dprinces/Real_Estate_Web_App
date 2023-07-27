@@ -12,7 +12,6 @@ export default function ScheduleInspection() {
     preferredContactMethod: '',
     inspectionDate: '',
     inspectionTime: '',
-    additionalNotes: '',
   });
 
    const handleChange = (e) => {
@@ -35,9 +34,10 @@ export default function ScheduleInspection() {
       <div className="hero-section">
         <h1>Schedule Inspection</h1>
       </div>
-      
       <div className="form-container">
-        
+        <div className="image-container">
+          <img src="../images/clip-art.png" alt="Clip Art" />
+        </div>
         <form onSubmit={handleSubmit}>
           <label>
             Name:
@@ -118,16 +118,6 @@ export default function ScheduleInspection() {
               onChange={handleChange}
               placeholder="Select the inspection time"
               required
-            />
-          </label>
-          <label>
-            Additional Notes:
-            <textarea
-              name="additionalNotes"
-              value={formData.additionalNotes}
-              onChange={handleChange}
-              placeholder="Any additional notes or requirements"
-              rows={4}
             />
           </label>
           <button type="submit">Schedule Inspection</button>
