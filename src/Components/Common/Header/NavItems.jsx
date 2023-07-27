@@ -4,25 +4,25 @@ export const navItems = [
   {
     id: 1,
     title: "Home",
-    path: "./",
+    path: "/",
     cName: "nav-item",
   },
   {
     id: 2,
     title: "Our Properties",
-    path: "./ourproperties",
+    path: "/ourproperties",
     cName: "nav-item",
   },
   {
     id: 3,
     title: "Schedule Inspection",
-    path: "./scheduleinspection",
+    path: "/scheduleInspection",
     cName: "nav-item",
   },
   {
     id: 4,
     title: "About Us",
-    path: "./aboutus",
+    path: "/aboutus",
     cName: "nav-item",
   },
 ];

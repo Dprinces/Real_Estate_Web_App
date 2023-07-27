@@ -3,6 +3,9 @@ import Navbar from "../Common/Header/Navbar";
 import HeroSection from '../HeroSection/HerSection';
 import Features from "../Features/Features";
 import ReviewSection from '../ReviewSection/ReviewSection';
+import Footer from '../Common/Footer/Footer';
+
+import { FaQuoteLeft } from "react-icons/fa";
 
 
 export default function Home() {
@@ -12,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <Features />
       <ReviewSection />
+      <Footer />
     </>
   );
 }

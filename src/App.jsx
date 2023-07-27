@@ -1,11 +1,21 @@
-import { React, useState } from "react";
-// import { Routes, Route, Link, Outlet } from "react-router-dom";
-import Pages from './Components/Pages/Pages'
-// import './index.css'
+import { React } from "react";
+import { Routes, Route} from "react-router-dom";
+import Home from "./Components/Home/Home";
+import ScheduleInspection from "./Components/ScheduleInspection/ScheduleInspection";
+import './index.css';
+import AboutUs from "./Pages/AboutUs";
 
 
 export default function App() {
   return (
-    <Pages />
-  )
+    <div>
+      {/* <Pages /> */}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/scheduleInspection" element={<ScheduleInspection />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+      </Routes>
+    </div>
+  );
 }
