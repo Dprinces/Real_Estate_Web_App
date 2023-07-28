@@ -22,30 +22,56 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-flex-end">
-        <div className="footer-contact">
-          <p>123 Main Street, Cityville, Country</p>
-          <p>Telephone: +1 (555) 123-4567</p>
-        </div>
-        <ul className="footer-social-media">
-          <li>
-            <a href="#" target="_blank">
-              <img src="/images/facebook-icon.png" alt="Facebook icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="/images/twitter-icon.png" alt="Twitter icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="/images/instagram-icon.png" alt="Instagram" />
-            </a>
-          </li>
-        </ul>
-        <p>
-          &copy; {new Date().getFullYear()} HomeofHonour. All rights reserved.
-        </p>
+          <ul className="footer-social-media">
+            <li>
+              <a href="#" target="_blank">
+                <img src="/images/facebook.png" alt="Facebook icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="/images/twitter.png"
+                  alt="Twitter icon"
+                  className="elipse"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="/images/instagram.png" alt="Instagram icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="/images/youtube.svg"
+                  alt="Instagram icon"
+                  className="elipse"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="/images/thread.png" alt="Thread icon" />
+              </a>
+            </li>
+          </ul>
+          <div className="footer-contact">
+            <p>
+              Olaoluwa house, Okene close, Victoria Island,<br /> Lagos, Nigeria.
+              </p>
+             <p> contact@homeofhonor.com </p>  
+
+             <p>+234 700 1234567</p>
+            
+            {/* <p>Telephone: +1 (555) 123-4567</p> */}
+
+            <p>
+              &copy; {new Date().getFullYear()} HomeofHonour. All rights
+              reserved.
+            </p>
+          </div>
         </div>
       </div>
     </div>
