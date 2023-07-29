@@ -30,14 +30,9 @@ export const navItems = [
 export const serviceDropdown = [
   {
     id: 1,
-    title: "Ado",
-    path: "./ado",
+    title: "Fajuyi Estate",
+    path: "./fajuyiEstate",
     cName: "submenu-item",
   },
-  {
-    id: 2,
-    title: "Ikere",
-    path: "./ikere",
-    cName: "submenu-item",
-  },
+  
 ];
