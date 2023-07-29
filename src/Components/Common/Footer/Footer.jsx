@@ -59,15 +59,16 @@ export default function Footer() {
           </ul>
           <div className="footer-contact">
             <p>
-              Olaoluwa house, Okene close, Victoria Island,<br /> Lagos, Nigeria.
-              </p>
-             <p> contact@homeofhonor.com </p>  
+              Olaoluwa house, Okene close, Victoria Island,
+              <br /> Lagos, Nigeria.
+            </p>
+            <p> contact@homeofhonor.com </p>
 
-             <p>+234 700 1234567</p>
-            
-            {/* <p>Telephone: +1 (555) 123-4567</p> */}
+            <p>+234 700 1234567</p>
 
-            <p>
+            <hr />
+
+            <p className="copyright">
               &copy; {new Date().getFullYear()} HomeofHonour. All rights
               reserved.
             </p>
