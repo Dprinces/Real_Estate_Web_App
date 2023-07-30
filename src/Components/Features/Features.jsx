@@ -8,7 +8,7 @@ export default function Features() {
       <div className="grid-container">
         <div className="grid-one">
           <p>
-            Our major aim is to provide you an affordable property without having
+            Our major aim is to provide you an affordable properties without having
             to break the bank.
           </p>
         </div>

@@ -1,17 +1,17 @@
-import React from 'react';
-import Navbar from '../../Components/Common/Header/Navbar';
-import ImageSlider from './ImageSlider';
+import React from "react";
+import Navbar from "../../Components/Common/Header/Navbar";
+import { estateFeatures } from "./Data/EstateFeatures";
+import ImageSlider from "./ImageSlider";
 import "./EstatePage.css";
 
 export default function EstatePage() {
-
-  const estateFeatures = [
-    'Good Road',
-    'Sport Centre',
-    'Power Supply',
-    'Perimeter Fencing',
-    'Maximum Security',
-  ];
+//   const estateFeatures = [
+//     "Good Road",
+//     "Sport Centre",
+//     "Power Supply",
+//     "Perimeter Fencing",
+//     "Maximum Security",
+//   ];
 
   return (
     <div>
@@ -25,7 +25,7 @@ export default function EstatePage() {
           <img
             src="/images/location-marker.png"
             alt="Location icon"
-            style={{ width: "3.125rem", height: "3.125rem" }}
+            style={{ width: "2.87rem", height: "2.8rem" }}
           />
           <div className="para-text">
             <p>Eksuth Road, Adebayo, Ado Ekiti.</p>
@@ -35,9 +35,9 @@ export default function EstatePage() {
           <div className="slides">
             <ImageSlider />
           </div>
-    
+
           <div className="description">
-            <p>
+            <p className="desc-para">
               FAJUYI is an estate beautifully designed with a blend of serenity,
               comfort, recreation & wholesome family life. It is a dynamic
               landscape where opportunities for investment and growth abound.
@@ -45,29 +45,49 @@ export default function EstatePage() {
               along Iworoko Road, Ado, Ekiti State..
             </p>
 
-            <button>View Map</button>
+            <button className="map-btn">View Map</button>
           </div>
         </div>
 
-        <div className="buttons">
-          <button>Reserve a plot</button>
-          <button>Own a house</button>
+        <div className="btn-wrapper">
+          <button className="booking-btn">Reserve a plot</button>
+          <button className="booking-btn">Own a house</button>
         </div>
 
         <section className="estate-features">
           <h2>Estate Features</h2>
-          <ul>
-            {estateFeatures.map((feature, index) => (
-              <li key={index}>{feature}</li>
+          <div className="estate-features-container">
+            {estateFeatures.map(({ id, img, features }) => (
+              <div>
+                <div key={id} className="estate-feature">
+                  <div className="icons">
+                    <img src={img} alt="Estate Features Icons" />
+                  </div>
+
+                  <div className="icons-text">{features}</div>
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
         </section>
 
-        <section className="map">
-          <button>Quick Response</button>
+        <section className="map-wrapper">
+          <div className="map">
+            <img src="/images/map.png" alt="A map" />
+          </div>
+          <div className="quick-r-btn">
+            <img src="/icons/whatsapp.png" alt="whatsapp" className="whatsapp-icon" />
+            <button> Quick Response</button>
+          </div>
         </section>
       </main>
       <footer />
     </div>
   );
-};
+}
+
+//    <ul>
+//      {estateFeatures.map((feature, index) => (
+//        <li key={index}>{feature}</li>
+//      ))}
+//    </ul>;

@@ -8,7 +8,7 @@ export default function HerSection() {
       <div className="hero-container">
         <div className="content-wrapper">
           <h1 className="hero-title">
-            Consider owning rather than renting
+            Consider owning rather < br /> than renting
           </h1>
           <p class="hero-text">
             Owning a home is not just about four walls, <br /> it's about

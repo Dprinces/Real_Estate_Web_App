@@ -18,7 +18,10 @@
 
 .btn:hover {
   color: rgb(4, 4, 4);
+  /* background-color: transparent; */
   /* background: white; */
+  border: 1px solid black;
+  font-weight: 500;
 }
 
 .profile-icon {
