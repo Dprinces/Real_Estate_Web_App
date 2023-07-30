@@ -8,9 +8,7 @@ export default function HerSection() {
       <div className="hero-container">
         <div className="content-wrapper">
           <h1 className="hero-title">
-            Why rent?
-            <br />
-            When you can own.
+            Consider owning rather than renting
           </h1>
           <p class="hero-text">
             Owning a home is not just about four walls, <br /> it's about
@@ -22,8 +20,6 @@ export default function HerSection() {
           </div>
         </div>
       </div>
-
-      <Stats />
     </>
   );
 }

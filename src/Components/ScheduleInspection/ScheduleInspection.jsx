@@ -42,7 +42,7 @@ export default function ScheduleInspection() {
           </div>
           <form onSubmit={handleSubmit}>
             <label>
-              Name:
+              Name
               <input
                 type="text"
                 name="fullName"
@@ -53,7 +53,7 @@ export default function ScheduleInspection() {
               />
             </label>
             <label>
-              Email:
+              Email
               <input
                 type="email"
                 name="email"
@@ -64,7 +64,7 @@ export default function ScheduleInspection() {
               />
             </label>
             <label>
-              Phone:
+              Phone
               <input
                 type="tel"
                 name="phoneNumber"
@@ -75,7 +75,7 @@ export default function ScheduleInspection() {
               />
             </label>
             <label>
-              Type of Property:
+              Type of Property
               <input
                 type="text"
                 name="typeOfProperty"
@@ -101,7 +101,7 @@ export default function ScheduleInspection() {
               </select>
             </label>
             <label>
-              Inspection Date:
+              Inspection Date
               <input
                 type="date"
                 name="inspectionDate"
@@ -112,7 +112,7 @@ export default function ScheduleInspection() {
               />
             </label>
             <label>
-              Inspection Time:
+              Inspection Time
               <input
                 type="time"
                 name="inspectionTime"

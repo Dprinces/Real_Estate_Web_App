@@ -11,7 +11,7 @@
 }
 
 .content-wrapper {
-  margin-top: 7rem;
+  margin-top: 4.5rem;
 }
 
 .hero-title {
@@ -29,7 +29,7 @@
   color: #fefefee6; 
   max-width: 500px; 
   margin: 0 auto; 
-  padding: 9px; 
+  padding: 4px; 
   /* background-color: transparent;  */
   border-radius: 4px; 
   text-align: center;

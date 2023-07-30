@@ -10,7 +10,7 @@ export const navItems = [
   {
     id: 2,
     title: "Our Properties",
-    path: "/ourproperties",
+    // path: "/ourproperty",
     cName: "nav-item",
   },
   {
@@ -31,7 +31,7 @@ export const serviceDropdown = [
   {
     id: 1,
     title: "Fajuyi Estate",
-    path: "./fajuyiEstate",
+    path: "/fajuyiEstate",
     cName: "submenu-item",
   },
   
