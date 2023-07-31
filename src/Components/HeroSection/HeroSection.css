@@ -10,9 +10,9 @@
   opacity: 1;
 }
 
-.content-wrapper {
+/* .content-wrapper {
   margin-top: 4.5rem;
-}
+} */
 
 .hero-title {
   color: white;
@@ -21,6 +21,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 8.9rem;
 }
 
 .hero-text {

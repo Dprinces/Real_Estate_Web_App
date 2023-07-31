@@ -1,6 +1,6 @@
 .btn-wrapper {
   position: relative;
-  display: inline-flex;
+  /* display: inline-flex; */
 }
 
 .btn {
@@ -14,6 +14,7 @@
   border-radius: 5px;
   transition: 0.3s all ease-out;
   cursor: pointer;
+  margin-bottom: 3.5rem;
 }
 
 .btn:hover {
@@ -29,7 +30,7 @@
   width: 24px; 
   height: 24px;
  position: absolute;
- top: 13%;
+ top: 8%;
  left: 8%;
  bottom: 0;
 
