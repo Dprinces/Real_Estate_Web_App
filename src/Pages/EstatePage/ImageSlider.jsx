@@ -10,6 +10,7 @@ export default function ImageSlider() {
     "../../../images/slide1.png",
     "../../../images/slide2.png",
     "../../../images/slide3.png",
+    "../../../images/overview.png"
       ];
 
       const settings = {
