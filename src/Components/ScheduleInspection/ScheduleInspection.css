@@ -18,10 +18,11 @@
   font-size: 24px;
   text-align: center;
   margin-bottom: 2rem;
+   
 }
 
-.form-container {
-  background: #d9d9d94d;
+.form-container  {
+  background: transparent;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -62,7 +63,7 @@ height: 35.5625rem;
   margin-bottom: 5px;
 }
 
-.form-container input {
+.form-container input  {
   width: 30.4375rem;
   height: 2rem;
   padding: 20px;
@@ -76,8 +77,20 @@ height: 35.5625rem;
   box-shadow: 0px 8px 4px 0px rgba(0, 138, 76, 0.3);
 }
 
-.form-container select {
+.form-container .select-one {
   width: 30.4375rem;
+  height: 1.8rem;
+  padding: 19px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border-radius: 0.625rem;
+  border: 2px solid rgba(0, 138, 76, 0.8);
+  background: rgba(217, 217, 217, 0.2);
+  box-shadow: 0px 8px 4px 0px rgba(0, 138, 76, 0.3);
+}
+
+.form-container .select-two {
+  /* width: 30.4375rem; */
   height: 1.8rem;
   padding: 19px;
   border-radius: 4px;
@@ -117,7 +130,64 @@ input::placeholder {
   background-color: #0056b3;
 }
 
-inout:required {
+input:required {
   color: green;
 
+}
+
+/* scheduleInspection.css */
+
+/* Style for the time container */
+.time-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for each time dropdown */
+.time-dropdown {
+  margin-right: 5px;
+
+}
+
+/* Style for the time separator (:) */
+.time-separator {
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+/* Style for the dropdown arrow */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('path/to/your/dropdown-arrow-icon.png') no-repeat;
+  background-position: right 10px center;
+  background-size: 15px;
+  padding-right: 25px; /* Adjust this value as needed based on your arrow icon size */
+  padding-left: 5px; /* Add some padding on the left to make room for arrow icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  width: 23px;
+  
+}
+
+/* Style for the dropdown options */
+select option {
+  background: #fff;
+  color: #333;
+}
+
+/* Optional: Style for the button */
+button[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }

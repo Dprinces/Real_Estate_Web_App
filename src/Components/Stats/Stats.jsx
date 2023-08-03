@@ -18,14 +18,14 @@ export default function Stats() {
       </div>
       <div className="flexColCenter stat">
         <span>
-          <CountUp start={30} end={54} duration={4} />
+          <CountUp start={20} end={54} duration={4} />
           <span>+</span>
         </span>
         <span className="secondary-text">Plot sold</span>
       </div>
       <div className="flexColCenter stat">
         <span>
-          <CountUp start={20} end={42} duration={4} />
+          <CountUp start={10} end={42} duration={4} />
           <span>+</span>
         </span>
         <span className="secondary-text">Unit sold</span>

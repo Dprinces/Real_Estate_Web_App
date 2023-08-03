@@ -1,0 +1,53 @@
+ .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center; 
+  background-color: beige;
+}   
+
+ /* .container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  justify-content: center;
+ 
+
+}  */
+
+.heading {
+    text-align: center;
+    font-weight: 500;
+}
+
+
+h2 {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 0.5rem;
+}
+
+.para-text {
+
+width: 60rem;
+height: auto;
+}
+
+.booking-btn {
+    border: none;
+  background: transparent;
+  padding: 6px 6px 6px 6px;  
+  font-size: 1.1rem;
+  color: white;
+  background: #008A4C;
+  border-radius: 5px;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+   margin-bottom: 3.5rem; 
+} 
+
+
+/* .land-wrapper {
+
+} */
+

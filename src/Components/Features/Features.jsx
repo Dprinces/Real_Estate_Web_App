@@ -1,6 +1,6 @@
-import React from 'react'
-import './Features.css'
-
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Features.css";
 
 export default function Features() {
   return (
@@ -8,16 +8,19 @@ export default function Features() {
       <div className="grid-container">
         <div className="grid-one">
           <p>
-            Our major aim is to provide you an affordable properties without having
-            to break the bank.
+            Our major aim is to provide you an affordable properties without
+            having to break the bank.
           </p>
         </div>
-        <div className='grid-two'>
+        <div className="grid-two">
+          <Link to="/land">
             <img src="/images/Land.png" alt="Land pics" />
+          </Link>
         </div>
         <div className="grid-three">
-            <img src="/images/House.png" alt="House pics" />
-
+          <Link to='/house'>
+          <img src="/images/House.png" alt="House pics" />
+          </Link>
         </div>
       </div>
     </>

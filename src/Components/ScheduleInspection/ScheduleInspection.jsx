@@ -12,22 +12,23 @@ export default function ScheduleInspection() {
     properties: '',
     preferredContactMethod: '',
     inspectionDate: '',
-    inspectionTime: '',
+    inspectionHour: '12',
+    inspectionMinute: '00',
+    inspectionAMPM: 'AM',
   });
 
-   const handleChange = (e) => {
-     const { name, value } = e.target;
-     setFormData({
-       ...formData,
-       [name]: value,
-     });
-   };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
-   const handleSubmit = (e) => {
-     e.preventDefault();
-     console.log(formData);
-   };   
-  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
 
   return (
     <>
@@ -45,13 +46,16 @@ export default function ScheduleInspection() {
         </div>
         <div className="form-container">
           <div className="image-container">
-            <img src="../images/customer-service.png" alt="Female Customer Service" />
+            <img
+              src="../images/clip-art.png"
+              alt="Clip Art"
+            />
           </div>
           <form onSubmit={handleSubmit}>
             <label>Name</label>
             <input
               type="text"
-              name="name"
+              name="Name"
               value={formData.Name}
               onChange={handleChange}
               placeholder="Enter your full name"
@@ -84,6 +88,7 @@ export default function ScheduleInspection() {
               value={formData.properties}
               onChange={handleChange}
               required
+              className="select-one"
             >
               <option value="" disabled>
                 Select the type of property
@@ -94,11 +99,12 @@ export default function ScheduleInspection() {
               {/* Add more property types as needed */}
             </select>
 
-            <label>Select a Prefer Contact Method</label>
+            <label>Select a Preferred Contact Method</label>
             <select
               name="preferredContactMethod"
               value={formData.preferredContactMethod}
               onChange={handleChange}
+              className="select-one"
               required
             >
               <option value="" disabled>
@@ -119,14 +125,54 @@ export default function ScheduleInspection() {
             />
 
             <label>Time</label>
-            <input
-              type="time"
-              name="inspectionTime"
-              value={formData.inspectionTime}
-              onChange={handleChange}
-              placeholder="Select the inspection time"
-              required
-            />
+            <div className="time-container">
+              <div className="time-dropdown">
+                <select
+                  name="inspectionHour"
+                  value={formData.inspectionHour}
+                  onChange={handleChange}
+                  className="select-two"
+                  required
+                >
+                  {Array.from({ length: 12 }, (_, i) => i + 1).map((hour) => (
+                    <option key={hour} value={hour.toString().padStart(2, "0")}>
+                      {hour.toString().padStart(2, "0")}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              {/* <span className="time-separator">:</span> */}
+              <div className="time-dropdown">
+                <select
+                  name="inspectionMinute"
+                  value={formData.inspectionMinute}
+                  onChange={handleChange}
+                  className="select-two"
+                  required
+                >
+                  {Array.from({ length: 60 }, (_, i) => i).map((minute) => (
+                    <option
+                      key={minute}
+                      value={minute.toString().padStart(2, "0")}
+                    >
+                      {minute.toString().padStart(2, "0")}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="time-dropdown">
+                <select
+                  name="inspectionAMPM"
+                  value={formData.inspectionAMPM}
+                  onChange={handleChange}
+                  className="select-two"
+                  required
+                >
+                  <option value="AM">AM</option>
+                  <option value="PM">PM</option>
+                </select>
+              </div>
+            </div>
 
             <button type="submit">Schedule Inspection</button>
           </form>
@@ -135,6 +181,6 @@ export default function ScheduleInspection() {
       <Footer />
     </>
   );
-};
+}
 
 
