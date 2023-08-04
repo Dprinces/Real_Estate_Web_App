@@ -1,9 +1,14 @@
+ .land-wrapper {
+  background-color: #ffffff;
+ }
+ 
+ 
  .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   justify-content: center; 
-  background-color: beige;
+  background-color: rgba(255, 255, 255, 0.);
 }   
 
  /* .container {
@@ -18,13 +23,19 @@
 .heading {
     text-align: center;
     font-weight: 500;
+    margin-top: 6rem;
 }
 
+.heading-main-title  {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
 
-h2 {
+.heading-sub-title{
     font-weight: 600;
     font-size: 17px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #000000be;
 }
 
 .para-text {
@@ -46,8 +57,85 @@ height: auto;
    margin-bottom: 3.5rem; 
 } 
 
+.lands-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row; 
+  margin-bottom: 20rem;
+  
+  
+}
 
-/* .land-wrapper {
+.land-image {
+  width: 40.6875rem;
+height: 22.625rem;
+}
 
-} */
+.prop-details {
+ width: 20.8125rem;
+height: 6.875rem;
+  margin-right: 2rem;
+  font-size: 19px;
+  
+}
+
+.sub-para {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+
+
+.p-payment-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 23px;
+}
+
+.payment-plan-container {
+  display: flex;
+  justify-content: center;
+  margin-right: 15rem;
+  margin-bottom: 5rem;
+}
+
+.payment-plan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  max-width: 300px; 
+  
+}
+
+.payment-plan button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+ 
+}
+
+
+.payment-plan button {
+  background-color: #008a4c;
+  color: #fff;
+  /* padding: 5px 9px; */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 0.625rem;
+  box-shadow: 0px 10px 4px 0px rgba(15, 169, 88, 0.5);
+  transition: 0.3s all ease-out;
+  /* width: 9.5625rem;  */
+padding: 0.8rem 3.125rem;
+width: max-content;
+margin: 0.3rem 0.5rem;
+}
+
+.payment-plan button:hover {
+  transition: all 0.5s ease-in-out;
+  color: black;
+  font-weight: 500;
+}
+
 

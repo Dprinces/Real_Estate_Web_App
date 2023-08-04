@@ -18,8 +18,8 @@ export default function EstatePage() {
       <Navbar />
 
       <main>
-        <div className="heading">
-          <h1>Fajuyi Estate</h1>
+        <div className="headings">
+          <h1 className="h1-title">Fajuyi Estate</h1>
         </div>
         <div className="location">
           <img
