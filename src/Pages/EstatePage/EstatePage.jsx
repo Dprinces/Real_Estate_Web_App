@@ -76,8 +76,9 @@ export default function EstatePage() {
             <img src="/images/map.png" alt="A map" />
           </div>
           <div className="quick-r-btn">
+            
             <img src="/icons/whatsapp.png" alt="whatsapp" className="whatsapp-icon" />
-            <button> Quick Response</button>
+            <button className="resp-btn"> Quick Response</button>
           </div>
         </section>
       </main>

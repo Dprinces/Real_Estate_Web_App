@@ -78,7 +78,7 @@ height: 35.5625rem;
   box-shadow: 0px 8px 4px 0px rgba(0, 138, 76, 0.3);
 }
 
-.form-container .select-one {
+ /* .select-one {
   width: 30.4375rem;
   height: 1.8rem;
   padding: 19px;
@@ -88,84 +88,97 @@ height: 35.5625rem;
   border: 2px solid rgba(0, 138, 76, 0.8);
   background: rgba(217, 217, 217, 0.2);
   box-shadow: 0px 8px 4px 0px rgba(0, 138, 76, 0.3);
-}
+} */
 
 .form-container .select-two {
-  /* width: 30.4375rem; */
-  height: 1.8rem;
-  padding: 19px;
-  border-radius: 4px;
+  width: 57px;
+  height: 2rem;
+  background-image: url("../../..//icons/dropdown-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-position: calc(100% - 2px) center;
+  padding: 6px 17px 6px 13px;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  border: 2px solid rgba(0, 138, 76, 0.8);
+  box-shadow: 0px 8px 4px 0px rgba(0, 138, 76, 0.3);
+} 
+
+ input::placeholder {
+  font-size: 0.8rem;
+} 
+
+ .form-container select {
+  appearance: none;
+   padding: 6px 15px;
+   background-image: url("../../..//icons/dropdown-arrow.svg"); 
+  background-repeat: no-repeat;
+  background-size: 15px;
+   background-position: calc(100% - 15px) center;
+   width: 30.4375rem;
+  height: 2.8rem;
   margin-bottom: 1rem;
   border-radius: 0.625rem;
   border: 2px solid rgba(0, 138, 76, 0.8);
-  background: rgba(217, 217, 217, 0.2);
   box-shadow: 0px 8px 4px 0px rgba(0, 138, 76, 0.3);
-}
+} 
 
-input::placeholder {
-  font-size: 0.8rem;
-}
-
-.form-container select {
-  appearance: none;
-  padding-right: 30px;
-  background-image: url("path/to/your/arrow-icon.svg"); /* Add your own arrow icon */
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 15px;
-}
-
-.form-container button {
+ .form-container button {
   display: block;
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  background-color: #007bff;
+  float: right;
+  text-align: center;
+   background-color: #008a4c;
   color: #fff;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
-}
+  font-size: 16px;
+  border-radius: 0.625rem;
+  box-shadow: 0px 10px 4px 0px rgba(15, 169, 88, 0.5);
+  transition: 0.3s all ease-out;
+  padding: 0.8rem 3.125rem;
+  margin: 0.3rem 0.5rem;
+  width: 10rem;
+  margin-right: 13.5rem;
+  
+} 
 
-.form-container button:hover {
-  background-color: #0056b3;
-}
+  .form-container button:hover {
+  transition: all 0.5s ease-in-out;
+  color: black;
+  font-weight: 500;
+}  
 
-input:required {
+ input:required {
   color: green;
 
-}
+} 
 
-/* scheduleInspection.css */
-
-/* Style for the time container */
-.time-container {
+ .time-container {
   display: flex;
   align-items: center;
 }
 
-/* Style for each time dropdown */
 .time-dropdown {
-  margin-right: 5px;
+  margin-right: 6px;
 
 }
 
-/* Style for the time separator (:) */
 .time-separator {
-  margin: 0 5px;
+  margin: 0 3px;
   font-weight: bold;
-}
+  margin-bottom: 1rem;
+} 
 
-/* Style for the dropdown arrow */
-select {
+
+/* select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   background: url('path/to/your/dropdown-arrow-icon.png') no-repeat;
   background-position: right 10px center;
   background-size: 15px;
-  padding-right: 25px; /* Adjust this value as needed based on your arrow icon size */
-  padding-left: 5px; /* Add some padding on the left to make room for arrow icon */
+  padding-right: 25px;  Adjust this value as needed based on your arrow icon size 
+  padding-left: 5px;  Add some padding on the left to make room for arrow icon 
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
@@ -173,7 +186,7 @@ select {
   cursor: pointer;
   width: 23px;
   
-}
+} */
 
 /* Style for the dropdown options */
 select option {
@@ -181,14 +194,12 @@ select option {
   color: #333;
 }
 
-/* Optional: Style for the button */
-button[type="submit"] {
+/* button[type="submit"] {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-}
+} */

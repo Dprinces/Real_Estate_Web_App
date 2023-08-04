@@ -19,9 +19,9 @@
 
 .grid-two img {
   transition: transform 0.3s;
-  /* box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1); */
-  box-shadow: 8px 10px 10px;
-}
+ box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.9); 
+   /* box-shadow: 5px 10px 15px; */
+} 
 
 .grid-two:hover img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -31,7 +31,8 @@
 .grid-three img {
   transition: transform 0.3s;
   /* box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1); */
-  box-shadow: 8px 10px 10px;
+  /* box-shadow: 3px 10px 15px; */
+  box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.9);
 }
 
 .grid-three:hover img {
@@ -43,6 +44,22 @@
 
  .primary {
   border: 2px solid #999; 
+  border-radius: 5px; 
+  border: #999;
+  box-shadow: 8px 10px 10px; 
+  width: 28rem;
+  height: 34rem;
+  padding: 0 5rem;
+  transition: transform 0.3s;
+}  
+
+.primary:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1); 
+}
+
+ .primary {
+  border: 2px solid #999; 
   /* padding: 10px 10px 50px;  */
   border-radius: 5px; 
   border: #999;
@@ -51,8 +68,4 @@
   height: 34rem;
   padding: 0 5rem;
    transition: transform 0.3s;
-}  
-
-.primary:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transform: scale(1.1);
+}

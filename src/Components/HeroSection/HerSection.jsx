@@ -1,26 +1,62 @@
-import React from "react";
-import Stats from "../Stats/Stats";
+import React, { useState } from "react";
 import "./HeroSection.css";
 
-export default function HerSection() {
+const mockProperties = [
+  { id: 1, name: "Luxury Villa" },
+  { id: 2, name: "Modern Apartment" },
+  { id: 3, name: "Cozy Cottage" },
+  // Add more properties as needed
+];
+
+export default function HeroSection() {
+  const [searchInput, setSearchInput] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+
+  const handleSearchChange = (event) => {
+    setSearchInput(event.target.value);
+  };
+
+  const handleSearchClick = () => {
+    const filteredProperties = mockProperties.filter((property) =>
+      property.name.toLowerCase().includes(searchInput.toLowerCase())
+    );
+    setSearchResults(filteredProperties);
+  };
+
   return (
     <>
       <div className="hero-container">
         <div className="content-wrapper">
           <h1 className="hero-title">
-            Consider owning rather < br /> than renting
+            Consider owning rather <br /> than renting
           </h1>
-          <p class="hero-text">
+          <p className="hero-text">
             Owning a home is not just about four walls, <br /> it's about
             building memories.
           </p>
           <div className="search-bar">
-            <input type="text" placeholder="You are one search away..." />
-            <button className="search-button">SEARCH</button>
+            <input
+              type="text"
+              placeholder="You are one search away..."
+              value={searchInput}
+              onChange={handleSearchChange}
+            />
+            <button className="search-button" onClick={handleSearchClick}>
+              SEARCH
+            </button>
           </div>
+          {searchResults.length > 0 && (
+            <div className="search-results">
+              <h2>Search Results:</h2>
+              <ul>
+                {searchResults.map((property) => (
+                  <li key={property.id}>{property.name}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </>
   );
 }
-
