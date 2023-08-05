@@ -59,8 +59,7 @@ export default function Footer() {
           </ul>
           <div className="footer-contact">
             <p>
-              Olaoluwa house, Okene close, Victoria Island,
-              <br /> Lagos, Nigeria.
+              Block 10, Olaoluwa house, Ado-Ekiti, < br/>Ekiti State, Nigeria. 
             </p>
             <p> contact@homeofhonor.com </p>
 

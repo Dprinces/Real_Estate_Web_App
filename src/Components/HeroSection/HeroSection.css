@@ -1,18 +1,35 @@
+
+
+
 .hero-container {
-  background: url("../../../public/images/Hero-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  width: 90%;
-  margin: 2.5rem auto 5rem 6%;
+  overflow: hidden;
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.video-content-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 5px;
   opacity: 1;
 }
 
-/* .content-wrapper {
-  margin-top: 4.5rem;
-} */
+.content-wrapper {
+  position: relative; 
+}
 
 .hero-title {
   color: white;
@@ -21,19 +38,63 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 8.9rem;
+  padding-top: 10.9rem; 
 }
 
+.hero-title {
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 7.9rem;    
+  
+}
+
+
+
 .hero-text {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
-  color: #fefefee6; 
+  color: #fefefe; 
   max-width: 500px; 
   margin: 0 auto; 
-  padding: 4px; 
-  /* background-color: transparent;  */
+  padding: 4px;
   border-radius: 4px; 
   text-align: center;
+  transition: color 0.4s linear ;
+  position: relative;
+  
+}
+
+.hero-text:hover {
+  color: #fff;
+}
+
+.hero-text::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background:  #45a049c6;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.hero-text1::before {
+  transform: scaleX(0);
+  border-radius: 1rem ;
+
+}
+
+.hero-text1:hover::before {
+  transform: scaleX(1  );
+
 }
 
 .search-bar {
@@ -50,10 +111,17 @@
   border: none;
   border-radius: 4px 0 0 4px;
   outline: none;
+  background-color: transparent;
+  color: #fff;border: 3px solid;
 }
 
-input::placeholder{
+.search-bar input:hover {
+  background-color: #45a049c6;
+}
+
+.search-bar input::placeholder{
   font-size: 15px;
+  color: #fff;
 }
 
 .search-button {
@@ -61,12 +129,13 @@ input::placeholder{
   font-size: 18px;
   background-color: #4caf50;
   color: #fff;
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 0 4px 4px 0;
   outline: none;
   cursor: pointer;
   background: transparent;
 }
+
 .search-button:hover {
-  background-color: #45a049;
+  background-color: #45a049c6;
 }
