@@ -59,12 +59,7 @@ export default function Footer() {
           </ul>
           <div className="footer-contact">
             <p>
-<<<<<<< HEAD
-             Plot 54 , New Iyin Road, Behind New CBN,
-              <br /> Ado-Ekiti, Ekiti State, Nigeria.
-=======
               Block 10, Olaoluwa house, Ado-Ekiti, < br/>Ekiti State, Nigeria. 
->>>>>>> 762df4fe1e1b2db4e0480f0bca28581c59f4f6ab
             </p>
             <p> contact@homeofhonor.com </p>
 

@@ -132,15 +132,21 @@ export default function House() {
               alt="Location icon" />
           </div>
 
-          <h2>
-            Our Payment Plans
-          </h2>
-          <h3> Outright </h3>
-          <h3> 6 Months </h3>
-          <h3> 12 Months </h3>
-          <h3> 18 Months </h3>
-          <h3> 24 Months </h3>
-          <h3> 36 Months </h3>
+          <div className="p-wrapper">
+            <div className="p-payment-title">
+              <h3>Our Payment Plan</h3>
+            </div>
+            <div className="payment-plan-container">
+              <div className="payment-plan">
+                <button>Outright</button>
+                <button>6 Months</button>
+                <button>12 Months</button>
+                <button>18 Months</button>
+                <button>24 Months</button>
+                <button>38 Months</button>
+              </div>
+            </div>
+          </div>
         </section>
         <div>
           <img
@@ -216,15 +222,21 @@ export default function House() {
               src="../../../../public/images/Bedroom19.png"
               alt="Location icon" />
           </div>
-          <h2>
-            Our Payment Plans
-          </h2>
-          <h3> Outright </h3>
-          <h3> 6 Months </h3>
-          <h3> 12 Months </h3>
-          <h3> 18 Months </h3>
-          <h3> 24 Months </h3>
-          <h3> 36 Months </h3>
+          <div className="p-wrapper">
+            <div className="p-payment-title">
+              <h3>Our Payment Plan</h3>
+            </div>
+            <div className="payment-plan-container">
+              <div className="payment-plan">
+                <button>Outright</button>
+                <button>6 Months</button>
+                <button>12 Months</button>
+                <button>18 Months</button>
+                <button>24 Months</button>
+                <button>38 Months</button>
+              </div>
+            </div>
+          </div>
         </section>
         <section>
           <p>
