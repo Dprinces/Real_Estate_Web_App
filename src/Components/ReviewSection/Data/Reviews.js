@@ -4,27 +4,30 @@ export const reviews = [
     img: "/images/client1.png",
     reviewerName: "Mr & Mrs Olatunbosun",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ut ducimus ullam praesentium reprehenderit debitis, voluptate autem eos eligendi odio explicabo, quibusdam soluta similique quidem ratione quis non, libero corporis qui suscipit. Esse, soluta laboriosam quam culpa voluptatibus iusto quasi iure dolorem, eaque blanditiis dignissimos amet pariatur sapiente!",
+      "Thank you for the exceptional service and support throughout my real estate journey. Your professionalism, expertise, and personalized approach made the entire process smooth and enjoyable. I am grateful for your commitment to excellence in helping me find my dream home. You truly exceeded my expectations."
   },
   {
     id: "2",
     img: "/images/client1.png",
-    reviewerName: "Mr & Mrs Olatunbosun",
+    reviewerName: "Richie Black",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ut ducimus ullam praesentium reprehenderit debitis, voluptate autem eos eligendi odio explicabo, quibusdam soluta similique quidem ratione quis non, libero corporis qui suscipit. Esse, soluta laboriosam quam culpa voluptatibus iusto quasi iure dolorem, eaque blanditiis dignissimos amet pariatur sapiente!",
+      "Thank you for the exceptional service and support throughout my real estate journey. Your professionalism, expertise, and personalized approach made the entire process smooth and enjoyable. I am grateful for your commitment to excellence in helping me find my dream home. You truly exceeded my expectations.",
+
+                                                    
   },
   {
     id: "3",
     img: "/images/client1.png",
-    reviewerName: "Mr & Mrs Olatunbosun",
+    reviewerName: "Mr. Adigun Alapomeji",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ut ducimus ullam praesentium reprehenderit debitis, voluptate autem eos eligendi odio explicabo, quibusdam soluta similique quidem ratione quis non, libero corporis qui suscipit. Esse, soluta laboriosam quam culpa voluptatibus iusto quasi iure dolorem, eaque blanditiis dignissimos amet pariatur sapiente!",
+      "Thank you for the exceptional service and support throughout my real estate journey. Your professionalism, expertise, and personalized approach made the entire process smooth and enjoyable. I am grateful for your commitment to excellence in helping me find my dream home. You truly exceeded my expectations."
   },
   {
-    id: "3",
+    id: "4",
     img: "/images/client1.png",
-    reviewerName: "Mr & Mrs Olatunbosun",
+    reviewerName: "Mrs. Beatrice Ajayi",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ut ducimus ullam praesentium reprehenderit debitis, voluptate autem eos eligendi odio explicabo, quibusdam soluta similique quidem ratione quis non, libero corporis qui suscipit. Esse, soluta laboriosam quam culpa voluptatibus iusto quasi iure dolorem, eaque blanditiis dignissimos amet pariatur sapiente!",
+      "Thank you for the exceptional service and support throughout my real estate journey. Your professionalism, expertise, and personalized approach made the entire process smooth and enjoyable. I am grateful for your commitment to excellence in helping me find my dream home. You truly exceeded my expectations.",
+
   },
 ];

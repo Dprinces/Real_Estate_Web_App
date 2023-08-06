@@ -15,9 +15,10 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <Features />
-      <Stats />
+      
       <OurFocus />
       <ReviewSection />
+      <Stats />
       <Footer />
     </>
   );

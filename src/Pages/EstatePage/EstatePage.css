@@ -86,8 +86,17 @@ font-weight: 400;
 text-align: center;
 margin-top: 1.7rem;
 margin-bottom: 5rem;
+transition: all 0.3sec ease;
 
 }
+
+.booking-btn:active {
+  transition: scale(1.96);
+  color: black;
+  font-weight: 500;
+}
+
+
 
 .feat-wrapper {
   display: flex;
