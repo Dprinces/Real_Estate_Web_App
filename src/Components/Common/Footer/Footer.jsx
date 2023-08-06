@@ -59,8 +59,8 @@ export default function Footer() {
           </ul>
           <div className="footer-contact">
             <p>
-              Olaoluwa house, Okene close, Victoria Island,
-              <br /> Lagos, Nigeria.
+             Plot 54 , New Iyin Road, Behind New CBN,
+              <br /> Ado-Ekiti, Ekiti State, Nigeria.
             </p>
             <p> contact@homeofhonor.com </p>
 
