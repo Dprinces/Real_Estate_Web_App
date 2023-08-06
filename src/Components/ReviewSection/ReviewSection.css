@@ -105,3 +105,189 @@
     text-align: right;
     color: #008A4C;
 }
+
+@media screen and (max-width: 1024px) {
+
+  .review-wrapper {
+    /* Adjust the styles for the review wrapper at this screen size */
+    overflow: visible; /* or any other desired value */
+  }
+
+  .review-title {
+    /* Adjust the styles for the review title at this screen size */
+    font-size: 1.2rem; /* or any other desired value */
+     font-size: 2.7vw;
+    margin-bottom: 2rem;
+  }
+
+  .border-bottom {
+    /* Adjust the styles for the border bottom at this screen size */
+    width: 10%; /* or any other desired value */
+  }
+
+  .review-container {
+    /* Adjust the styles for the review container at this screen size */
+    width: 90%; /* or any other desired value */
+    grid-template-columns: repeat(2, 1fr); /* or any other desired value */
+    gap: 10px; /* or any other desired value */
+     margin: 3rem auto 30rem;
+  }
+
+  .review-container .client-container {
+    /* Adjust the styles for the client container at this screen size */
+    width: 100%; /* or any other desired value */
+    margin: 50px 0; /* or any other desired value */
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .client-info {
+    /* Adjust the styles for the client info at this screen size */
+    text-align: center; /* or any other desired value */
+    padding-top: 2rem;
+  }
+
+  .review-container .client-container .client-pic {
+    
+    /* left: 0; 
+    transform: none; 
+    top: 0; */
+    position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(0%, -50%);
+    
+  }
+
+  .client-info h3 {
+    /* Adjust the styles for the client name at this screen size */
+    padding: 2rem 0 0.5rem; /* or any other desired value */
+  }
+
+  .client-container p {
+    /* Adjust the styles for the client paragraph at this screen size */
+    font-size: 0.8rem; /* or any other desired value */
+    padding: 0; /* or any other desired value */
+  }
+
+  .review-container .quote-left {
+    /* Adjust the styles for the quote left at this screen size */
+    font-size: 20px; /* or any other desired value */
+    text-align: center; /* or any other desired value */
+
+  }
+
+  .review-container .quote-right {
+    /* Adjust the styles for the quote right at this screen size */
+    font-size: 20px; /* or any other desired value */
+    text-align: center; /* or any other desired value */
+  }
+}
+
+
+
+
+/* Media query for screen width 1024px */
+/* @media screen and (max-width: 1024px) {
+  .review-wrapper {
+    padding: 0% 5%;
+    
+  }
+
+  .review-title {
+    font-size: 2.7vw;
+    margin-bottom: 2.5rem;
+  }
+
+ .border-bottom {
+    border-bottom: 4px solid #008A4C; 
+    border-end-end-radius: 1rem;
+    width: 15%;
+    text-align: center;
+    margin: 1px auto;
+}
+
+  .review-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 30px;
+    margin: 2rem auto 70rem;
+     grid-column-gap: 8rem;
+    
+     padding: 0;
+  }
+
+  .review-container .client-container {
+    width: 380px; 
+    margin: 40px 5px 40px 18.5%; 
+    padding: 20px 30px; 
+    transition: 0.3s ease;
+    border-radius: 2rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .client-info h3 {
+    padding: 3rem 0 0.5rem; 
+    font-size: 1.2rem; 
+  }
+
+  .client-container p {
+    font-size: 18px;
+    opacity: 0.86;
+    padding: 0 8px;
+    line-height: 1.6;
+  }
+
+
+  .review-container .quote-left,
+  .review-container .quote-right {
+    font-size: 30px; 
+    color: #008a4c;
+  }
+} */
+
+
+/* @media screen and (min-width: 1024px) {
+  .review-wrapper {
+    padding: 0 5%;
+  }
+
+  .review-title {
+    font-size: 2.2vw;
+  }
+
+  .border-bottom {
+    width: 2%;
+  }
+
+  .review-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+  }
+
+  .review-container .client-container {
+    width: 300px;
+    margin: 20px 0 20px 17.5%;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+    border-radius: 2rem;
+    box-shadow: rgba(34, 34, 34, 0.9);
+    background: rgba(0, 138, 76, 0.21);
+  }
+
+  .client-info h3 {
+    padding: 3rem 0 1rem;
+  }
+
+  .client-container p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+  .review-container .quote-left,
+  .review-container .quote-right {
+    font-size: 20px;
+  }
+} */

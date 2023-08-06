@@ -48,3 +48,54 @@
 .nav-item a:hover {
   background: #B9B9B9
 }
+
+
+/* ... Other styles ... */
+
+/* New styles for the mobile menu icon */
+.menu-icon {
+  display: none;
+  color: black; /* Change the color */
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Media query for screen width below 768px */
+@media screen and (max-width: 767px) {
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 11vh; /* Adjust the top position */
+    left: 0;
+    background-color: #d9d9d9;
+    transition: all 0.3s ease;
+  }
+
+  .nav-items.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    transform: translate(-100%, 60%);
+  }
+
+  /* Other styles for the menu items */
+  .nav-item {
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-item a {
+    margin-right: 0;
+    padding: 10px 20px; /* Adjust padding for mobile view */
+    border-radius: 0;
+  }
+}
