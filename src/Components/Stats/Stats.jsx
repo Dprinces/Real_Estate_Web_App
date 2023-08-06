@@ -14,21 +14,21 @@ export default function Stats() {
           <CountUp start={80} end={105} duration={4} />
           <span>+</span>
         </span>
-        <span className="secondary-text">Experience</span>
+        <span className="secondary-text">Plots sold</span>
       </div>
       <div className="flexColCenter stat">
         <span>
           <CountUp start={20} end={54} duration={4} />
           <span>+</span>
         </span>
-        <span className="secondary-text">Plot sold</span>
+        <span className="secondary-text">Units sold</span>
       </div>
       <div className="flexColCenter stat">
         <span>
           <CountUp start={10} end={42} duration={4} />
           <span>+</span>
         </span>
-        <span className="secondary-text">Unit sold</span>
+        <span className="secondary-text">Staff</span>
       </div>
     </div>
   );

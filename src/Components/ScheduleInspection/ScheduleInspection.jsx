@@ -35,8 +35,8 @@ export default function ScheduleInspection() {
       <Navbar />
       <div className="container">
         <div className="hero-section">
-          <h1>Schedule An Inspection</h1>
-          <p>
+          <h1 className='sch-insp'>Schedule An Inspection</h1>
+          <p className='sch-insp-para'>
             Take the first step towards a secure and profitable investment. We
             understand that seeing is believing and our sales team is on hand to
             give you a tour. All you need to do is fill in the form below and
