@@ -1,4 +1,180 @@
 .review-wrapper {
+  overflow: hidden;
+}
+
+.review-title {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-weight: 800;
+  position: relative;
+  font-size: 1.5vw;
+}
+
+.span-title {
+  color: #008A4C;
+}
+
+.border-bottom {
+  border-bottom: 4px solid #008A4C;
+  border-end-end-radius: 1rem;
+  width: 5%;
+  text-align: center;
+  margin: 1px auto;
+}
+
+.review-container {
+  width: 80%;
+  height: 54vh;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  position: relative;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.review-container .client-container {
+  position: relative;
+  width: 330px;
+  background: rgba(0, 138, 76, 0.21);
+  margin: 40px 0% 40px 18.5%;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+  border-radius: 2rem;
+  box-shadow: rgba(34, 34, 34, 0.9);
+}
+
+.client-info {
+  text-align: center;
+  color: black;
+  opacity: 0.74;
+}
+
+.review-container .client-container .client-pic {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -11%;
+  display: block;
+}
+
+.client-info h3 {
+  padding: 4rem 0 1.5rem;
+}
+
+.client-container p {
+  font-size: 0.9rem;
+  opacity: 0.86;
+  padding: 0 8px;
+  line-height: 1.5;
+}
+
+.review-container .quote-left {
+  font-size: 25px;
+  display: block;
+  text-align: left;
+  color: #008A4C;
+}
+
+.review-container .quote-right {
+  font-size: 25px;
+  display: block;
+  text-align: right;
+  color: #008A4C;
+}
+
+.navigation-icons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.navigation-icons img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.previous-icon {
+  margin-left: 0;
+}
+
+.next-icon {
+  margin-right: 0;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .review-wrapper {
+    overflow: visible;
+  }
+
+  .review-title {
+    font-size: 1.2rem;
+    font-size: 2.7vw;
+    margin-bottom: 2rem;
+  }
+
+  .border-bottom {
+    width: 10%;
+  }
+
+  .review-container {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 3rem auto 30rem;
+  }
+
+  .review-container .client-container {
+    width: 100%;
+    margin: 50px 0;
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .client-info {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .review-container .client-container .client-pic {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(0%, -50%);
+  }
+
+  .client-info h3 {
+    padding: 2rem 0 0.5rem;
+  }
+
+  .client-container p {
+    font-size: 0.8rem;
+    padding: 0;
+  }
+
+  .review-container .quote-left {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .review-container .quote-right {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+
+/* .review-wrapper {
     overflow: hidden;
 
 
@@ -27,7 +203,7 @@
 
 .review-container {
    width: 80%;
-  height: 60vh; 
+  height: 54vh; 
   margin: 2rem 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -36,9 +212,6 @@
   margin-top: 2.5rem;
   margin-bottom: 5rem;
   position: relative;
-   
-  
-   
 }
 
 
@@ -68,18 +241,13 @@
     left: 50%;
     transform: translateX(-50%);
     top: -11%;
-    /* width: 100%; */
+
     display: block;
     
 
     
 }
 
-/* .review-container .client-container .client-pic img {
-    transition: 0.3s ease; 
-    z-index: -10; 
-
-} */
 
 .client-info h3 {
  padding: 4rem 0 1.5rem;
@@ -109,49 +277,42 @@
 @media screen and (max-width: 1024px) {
 
   .review-wrapper {
-    /* Adjust the styles for the review wrapper at this screen size */
-    overflow: visible; /* or any other desired value */
+    overflow: visible; 
   }
 
   .review-title {
-    /* Adjust the styles for the review title at this screen size */
-    font-size: 1.2rem; /* or any other desired value */
+    
+    font-size: 1.2rem; 
      font-size: 2.7vw;
     margin-bottom: 2rem;
   }
 
   .border-bottom {
-    /* Adjust the styles for the border bottom at this screen size */
-    width: 10%; /* or any other desired value */
+    width: 10%; 
   }
 
   .review-container {
-    /* Adjust the styles for the review container at this screen size */
-    width: 90%; /* or any other desired value */
-    grid-template-columns: repeat(2, 1fr); /* or any other desired value */
-    gap: 10px; /* or any other desired value */
+  
+    width: 90%; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
      margin: 3rem auto 30rem;
   }
 
   .review-container .client-container {
-    /* Adjust the styles for the client container at this screen size */
-    width: 100%; /* or any other desired value */
-    margin: 50px 0; /* or any other desired value */
+    width: 100%; 
+    margin: 50px 0; 
     position: relative;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   }
 
   .client-info {
-    /* Adjust the styles for the client info at this screen size */
-    text-align: center; /* or any other desired value */
+    text-align: center; 
     padding-top: 2rem;
   }
 
   .review-container .client-container .client-pic {
     
-    /* left: 0; 
-    transform: none; 
-    top: 0; */
     position: absolute;
   top: 0;
   left: 50%;
@@ -160,29 +321,26 @@
   }
 
   .client-info h3 {
-    /* Adjust the styles for the client name at this screen size */
-    padding: 2rem 0 0.5rem; /* or any other desired value */
+    padding: 2rem 0 0.5rem;
   }
 
   .client-container p {
-    /* Adjust the styles for the client paragraph at this screen size */
-    font-size: 0.8rem; /* or any other desired value */
-    padding: 0; /* or any other desired value */
+    font-size: 0.8rem; 
+    padding: 0; 
   }
 
   .review-container .quote-left {
-    /* Adjust the styles for the quote left at this screen size */
-    font-size: 20px; /* or any other desired value */
-    text-align: center; /* or any other desired value */
+    font-size: 20px; 
+    text-align: center; 
 
   }
 
   .review-container .quote-right {
-    /* Adjust the styles for the quote right at this screen size */
-    font-size: 20px; /* or any other desired value */
-    text-align: center; /* or any other desired value */
+     
+    font-size: 20px; 
+    text-align: center; 
   }
-}
+} */
 
 
 

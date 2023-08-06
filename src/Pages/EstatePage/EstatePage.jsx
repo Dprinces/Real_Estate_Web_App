@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../Components/Common/Header/Navbar";
 import { estateFeatures } from "./Data/EstateFeatures";
 import Footer from "../../Components/Common/Footer/Footer";
+import { Link } from "react-router-dom";
 import ImageSlider from "./ImageSlider";
 import "./EstatePage.css";
 
@@ -51,8 +52,11 @@ export default function EstatePage() {
           </div>
 
           <div className="btn-wrapper">
+            <Link to='/land'>
             <button className="booking-btn">Reserve a plot</button>
-            <button className="booking-btn">Own a house</button>
+            </Link>
+            <Link to='/house'>
+            <button className="booking-btn">Own a house</button></Link>
           </div>
 
           <section className="estate-features">
