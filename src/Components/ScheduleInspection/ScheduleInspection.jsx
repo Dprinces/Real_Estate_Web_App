@@ -51,7 +51,7 @@ export default function ScheduleInspection() {
               alt="Clip Art"
             />
           </div>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} >
             <label>Name</label>
             <input
               type="text"
@@ -141,7 +141,7 @@ export default function ScheduleInspection() {
                   ))}
                 </select>
               </div>
-              {/* <span className="time-separator">:</span> */}
+             <span className="time-separator">:</span>
               <div className="time-dropdown">
                 <select
                   name="inspectionMinute"
@@ -174,7 +174,7 @@ export default function ScheduleInspection() {
               </div>
             </div>
 
-            <button type="submit">Schedule Inspection</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>

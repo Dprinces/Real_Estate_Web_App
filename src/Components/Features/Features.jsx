@@ -7,9 +7,9 @@ export default function Features() {
     <>
       <div className="grid-container">
         <div className="grid-one">
-          <p>
-            Our major aim is to provide you an affordable properties without
-            having to break the bank.
+          <p className="primary">
+            Our primary goal is to facilitate your journey towards becoming one
+            of our highly satisfied owners, with minimal stress and hassle.
           </p>
         </div>
         <div className="grid-two">
@@ -18,8 +18,8 @@ export default function Features() {
           </Link>
         </div>
         <div className="grid-three">
-          <Link to='/house'>
-          <img src="/images/House.png" alt="House pics" />
+          <Link to="/house">
+            <img src="/images/House.png" alt="House pics" />
           </Link>
         </div>
       </div>
