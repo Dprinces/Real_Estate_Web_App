@@ -11,6 +11,7 @@ export default function Land() {
       <Navbar />
       <div className="container">
         <div className="land-container">
+          <div></div>
           <div className="heading">
             <h1 className="heading-main-title">FAJUYI ESTATE</h1>
             <h2 className="heading-sub-title">Eco-Friendly Land</h2>
@@ -36,16 +37,14 @@ export default function Land() {
             </div>
           </div>
           <div className="plots-wrapper">
-            <div className="current-plots"> 
-              {estateLand.map(({id, img}) =>(
+            <div className="current-plots">
+              {estateLand.map(({ id, img }) => (
                 <div key={id} className="plot">
                   <img src={img} alt="Available Plots of Land" />
-                  </div>
-                
-              ) )}
-           </div>
+                </div>
+              ))}
+            </div>
           </div>
-
 
           <div className="p-wrapper">
             <div className="p-payment-title">
@@ -80,6 +79,16 @@ export default function Land() {
           </section>
         </div>
       </div>
+      <div class="more-info-wrapper">
+        <div className="more-info-title">
+          <h2>See more</h2>
+        </div>
+        <div className="">
+          <img src="/images/eveperf-land.png" alt="Image 1" />
+          <img src="/images/greenways-land.png" alt="Image 2" />
+        </div>
+      </div>
+
       <div className="resp-wrapper">
         <div className="quick-resp-btn">
           <a href="https://wa.me/08136154917" target="_blank">

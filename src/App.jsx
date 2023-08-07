@@ -18,8 +18,8 @@ export default function App() {
         <Route path="/fajuyiEstate" element={<EstatePage />} />
         <Route path="/scheduleInspection" element={<ScheduleInspection />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/land" element={<Land />} />
-        <Route path="/house" element={<House />} />
+        <Route path="/fajuyiLand" element={<Land />} />
+        <Route path="/fajuyiHouse" element={<House />} />
       </Routes>
     </div>
   );

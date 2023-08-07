@@ -52,10 +52,10 @@ export default function EstatePage() {
           </div>
 
           <div className="btn-wrapper">
-            <Link to='/land'>
+            <Link to='/fajuyiLand'>
             <button className="booking-btn">Reserve a plot</button>
             </Link>
-            <Link to='/house'>
+            <Link to='/fajuyiHouse'>
             <button className="booking-btn">Own a house</button></Link>
           </div>
 

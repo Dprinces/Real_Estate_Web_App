@@ -3,11 +3,12 @@
 } */
 
 .land-container {
-  max-width: 1200px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 20px;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(246, 248, 250);
+  border: 3px solid rgba(246, 248, 250);
 }
 
 /* .container {
@@ -22,7 +23,7 @@
 .heading {
   text-align: center;
   font-weight: 500;
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 
 .heading-main-title {
@@ -38,7 +39,7 @@
 }
 
 .para-text {
-  width: 60rem;
+  width: 100%;
   height: auto;
 }
 
@@ -138,4 +139,17 @@
   align-items: center;
   justify-content: space-between;
    gap: 2rem; 
+}
+
+
+.more-info-wrapper {
+  text-align: center;
+  font-weight: 300;
+  margin-top: 6rem;
+}
+
+.more-info-title {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+
 }
