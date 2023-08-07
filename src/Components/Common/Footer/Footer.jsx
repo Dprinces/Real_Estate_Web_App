@@ -11,13 +11,10 @@ export default function Footer() {
               <a href="#">Contact Us</a>
             </li>
             <li>
-              <a href="#">FAQs</a>
+              <a href="#">Privacy Policy</a>
             </li>
             <li>
               <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Terms and Condition</a>
             </li>
           </ul>
         </div>

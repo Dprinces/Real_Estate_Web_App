@@ -1,8 +1,8 @@
-.land-wrapper {
+/* .land-wrapper {
   background-color: #ffffff;
-}
+} */
 
-.container {
+.land-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -60,7 +60,7 @@
   justify-content: center;
   align-content: center;
   flex-direction: row;
-  margin-bottom: 20rem;
+  margin-bottom: 4rem;
 }
 
 .land-image {
@@ -126,4 +126,16 @@
   transition: all 0.5s ease-in-out;
   color: black;
   font-weight: 500;
+}
+
+.estate-features {
+  margin-bottom: 3.5rem;
+}
+
+.current-plots {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   gap: 2rem; 
 }

@@ -39,7 +39,7 @@
 
 
 
- .primary {
+ /* .primary {
   border: 2px solid #999; 
   border-radius: 5px; 
   border: #999;
@@ -48,7 +48,8 @@
   height: 34rem;
   padding: 0 5rem;
   transition: transform 0.3s;
-}  
+
+}   */
 
 .primary:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -57,13 +58,12 @@
 
  .primary {
   border: 2px solid #999; 
-  /* padding: 10px 10px 50px;  */
   border-radius: 5px; 
   border: #999;
   box-shadow: 8px 10px 10px;
   width: 28rem;
   height: 34rem;
-  padding: 0 5rem;
+  padding: 1rem 5rem;
    transition: transform 0.3s;
 }
 
@@ -96,6 +96,7 @@
   .grid-one {
     font-size: 1.5rem;
     text-align: center;
+    
   }
 
   .primary {

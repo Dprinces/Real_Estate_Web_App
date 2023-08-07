@@ -5,7 +5,7 @@ import "./Button.css";
 function Button() {
   return (
     <div className="btn-wrapper">
-    <Link to="signup">
+    <Link to="Login">
       <img
         src="/images/profile-icon.png"
         className="profile-icon"

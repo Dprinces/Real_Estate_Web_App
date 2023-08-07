@@ -29,6 +29,14 @@ export default function ReviewSection() {
         <div className="border-bottom"></div>
       </div>
       <div className="review-container">
+        <div className="navigation-icons">
+          <img
+            src={previousIcon}
+            alt="Previous Icon"
+            className="previous-icon"
+            onClick={handlePreviousReview}
+          />
+        </div>
         {reviews.map(({ id, img, reviewerName, review }, index) => (
           <div
             key={id}
@@ -53,21 +61,16 @@ export default function ReviewSection() {
             </p>
           </div>
         ))}
+        <div className="next-icon-container">
+          <img
+            src={nextIcon}
+            alt="Next Icon"
+            className="next-icon"
+            onClick={handleNextReview}
+          />
+        </div>
       </div>
-      <div className="navigation-icons">
-        <img
-          src={previousIcon}
-          alt="Previous Icon"
-          className="previous-icon"
-          onClick={handlePreviousReview}
-        />
-        <img
-          src={nextIcon}
-          alt="Next Icon"
-          className="next-icon"
-          onClick={handleNextReview}
-        />
-      </div>
+      
     </div>
   );
 }

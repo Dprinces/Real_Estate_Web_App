@@ -12,7 +12,7 @@
 }
 
 .services-submenu li a:hover {
-  background: rgb(0, 175, 175);
+  background: rgba(174, 182, 182, 0.734);
 }
 
 .services-submenu.clicked {

@@ -1,6 +1,6 @@
-.review-wrapper {
+/* .review-wrapper {
   overflow: hidden;
-}
+}  */
 
 .review-title {
   display: inline-block;
@@ -12,11 +12,11 @@
 }
 
 .span-title {
-  color: #008A4C;
+  color: #008a4c;
 }
 
 .border-bottom {
-  border-bottom: 4px solid #008A4C;
+  border-bottom: 4px solid #008a4c;
   border-end-end-radius: 1rem;
   width: 5%;
   text-align: center;
@@ -26,7 +26,7 @@
 .review-container {
   width: 80%;
   height: 54vh;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
@@ -40,11 +40,13 @@
   position: relative;
   width: 330px;
   background: rgba(0, 138, 76, 0.21);
-  margin: 40px 0% 40px 18.5%;
+  /* margin: 40px 0% 40px 18.5%; */
+  margin: 40px 0% 40px 0.5%;
   padding: 10px 20px;
   transition: 0.3s ease;
   border-radius: 2rem;
-  box-shadow: rgba(34, 34, 34, 0.9);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  /* box-shadow: rgba(34, 34, 34, 0.9); */
 }
 
 .client-info {
@@ -76,14 +78,14 @@
   font-size: 25px;
   display: block;
   text-align: left;
-  color: #008A4C;
+  color: #008a4c;
 }
 
 .review-container .quote-right {
   font-size: 25px;
   display: block;
   text-align: right;
-  color: #008A4C;
+  color: #008a4c;
 }
 
 .navigation-icons {
@@ -96,21 +98,42 @@
 
 .navigation-icons img {
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin: 0 10px;
+}
+
+.next-icon-container {
+  grid-column: 6; /* Place the next icon in the 6th column (last column) */
+  grid-row: span 2;
+  display: flex;
+  justify-content: flex-end; /* Align the next icon to the right */
+  align-items: center;
 }
 
 .previous-icon {
   margin-left: 0;
 }
 
-.next-icon {
-  margin-right: 0;
+.previous-icon:hover {
+  background-color: black;
+  border-radius: 100%;
+  padding: 2px;
+  border: 3px solid black;
 }
 
+.next-icon {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
 
-
+.next-icon:hover {
+  background-color: black;
+  border-radius: 100%;
+  padding: 2px;
+  border: 3px solid black;
+}
 
 @media screen and (max-width: 1024px) {
   .review-wrapper {
@@ -172,7 +195,6 @@
     text-align: center;
   }
 }
-
 
 /* .review-wrapper {
     overflow: hidden;
@@ -342,9 +364,6 @@
   }
 } */
 
-
-
-
 /* Media query for screen width 1024px */
 /* @media screen and (max-width: 1024px) {
   .review-wrapper {
@@ -402,7 +421,6 @@
     color: #008a4c;
   }
 } */
-
 
 /* @media screen and (min-width: 1024px) {
   .review-wrapper {

@@ -28,6 +28,18 @@ export default function ScheduleInspection() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+
+     setFormData({
+       Name: "",
+       email: "",
+       tel: "",
+       properties: "",
+       preferredContactMethod: "",
+       inspectionDate: "",
+       inspectionHour: "12",
+       inspectionMinute: "00",
+       inspectionAMPM: "AM",
+     });
   };
 
   return (
@@ -35,8 +47,8 @@ export default function ScheduleInspection() {
       <Navbar />
       <div className="container">
         <div className="hero-section">
-          <h1 className='sch-insp'>Schedule An Inspection</h1>
-          <p className='sch-insp-para'>
+          <h1 className="sch-insp">Schedule An Inspection</h1>
+          <p className="sch-insp-para">
             Take the first step towards a secure and profitable investment. We
             understand that seeing is believing and our sales team is on hand to
             give you a tour. All you need to do is fill in the form below and
@@ -46,12 +58,9 @@ export default function ScheduleInspection() {
         </div>
         <div className="form-container">
           <div className="image-container">
-            <img
-              src="../images/clip-art.png"
-              alt="Clip Art"
-            />
+            <img src="../images/clip-art.png" alt="Clip Art" />
           </div>
-          <form onSubmit={handleSubmit} >
+          <form onSubmit={handleSubmit}>
             <label>Name</label>
             <input
               type="text"
@@ -141,7 +150,7 @@ export default function ScheduleInspection() {
                   ))}
                 </select>
               </div>
-             <span className="time-separator">:</span>
+              <span className="time-separator">:</span>
               <div className="time-dropdown">
                 <select
                   name="inspectionMinute"
@@ -176,6 +185,19 @@ export default function ScheduleInspection() {
 
             <button type="submit">Submit</button>
           </form>
+        </div>
+      </div>
+      <div className="resp-wrapper">
+        <div className="quick-resp-btn">
+          <a href="https://wa.me/08136154917" target="_blank">
+            <img
+              src="/icons/whatsapp.png"
+              alt="whatsapp"
+              className="whatsapp-icon"
+            />
+
+            <button className="resp-btn"> Quick Response</button>
+          </a>
         </div>
       </div>
       <Footer />

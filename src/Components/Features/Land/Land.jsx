@@ -1,6 +1,7 @@
 import React from "react";
 import "./Land.css";
 import { estateFeatures } from "../../../Pages/EstatePage/Data/EstateFeatures";
+import { estateLand } from "./Data/EstateLands";
 import Navbar from "../../Common/Header/Navbar";
 import Footer from "../../Common/Footer/Footer";
 
@@ -8,8 +9,8 @@ export default function Land() {
   return (
     <>
       <Navbar />
-      <div className="land-wrapper">
-        <div className="container">
+      <div className="container">
+        <div className="land-container">
           <div className="heading">
             <h1 className="heading-main-title">FAJUYI ESTATE</h1>
             <h2 className="heading-sub-title">Eco-Friendly Land</h2>
@@ -34,6 +35,18 @@ export default function Land() {
               <img src="/images/land-image.png" alt="Land Image" />
             </div>
           </div>
+          <div className="plots-wrapper">
+            <div className="current-plots"> 
+              {estateLand.map(({id, img}) =>(
+                <div key={id} className="plot">
+                  <img src={img} alt="Available Plots of Land" />
+                  </div>
+                
+              ) )}
+           </div>
+          </div>
+
+
           <div className="p-wrapper">
             <div className="p-payment-title">
               <h3>Our Payment Plan</h3>
@@ -65,6 +78,19 @@ export default function Land() {
               ))}
             </div>
           </section>
+        </div>
+      </div>
+      <div className="resp-wrapper">
+        <div className="quick-resp-btn">
+          <a href="https://wa.me/08136154917" target="_blank">
+            <img
+              src="/icons/whatsapp.png"
+              alt="whatsapp"
+              className="whatsapp-icon"
+            />
+
+            <button className="resp-btn"> Quick Response</button>
+          </a>
         </div>
       </div>
       <Footer />
