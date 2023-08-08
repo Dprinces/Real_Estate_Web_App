@@ -1,0 +1,9 @@
+.star {
+  font-size: 30px; /* Adjust the size as needed */
+  color: clack;
+  cursor: pointer;
+}
+
+.star.selected {
+  color: green;
+}

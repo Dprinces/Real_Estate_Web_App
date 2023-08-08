@@ -4,6 +4,7 @@ import { reviews } from "./Data/Reviews";
 import "./ReviewSection.css";
 import previousIcon from "../../assets/icons/arrow-left.svg";
 import nextIcon from "../../assets/icons/arrow-right.svg";
+import UserRating from "./UserRating";
 
 export default function ReviewSection() {
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
@@ -59,6 +60,7 @@ export default function ReviewSection() {
                 <FaQuoteRight />
               </span>
             </p>
+            < UserRating />
           </div>
         ))}
         <div className="next-icon-container">
