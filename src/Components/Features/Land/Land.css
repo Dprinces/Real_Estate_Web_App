@@ -12,11 +12,11 @@
 }
 
 .land-hero {
-  background-image: url("../../../public/images/land-hero.jpg");
+  background-image: url("../../../public/images/land-hero.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 190px;
+  height: 200px;
   width: 100%;
   color: #fff;
   text-align: center;
