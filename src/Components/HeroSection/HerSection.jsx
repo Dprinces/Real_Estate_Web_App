@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./HeroSection.css";
 
 const mockProperties = [
-  { id: 1, name: "Luxury Villa" },
-  { id: 2, name: "Modern Apartment" },
-  { id: 3, name: "Cozy Cottage" },
+  // { id: 1, name: "Luxury Villa" },
+  // { id: 2, name: "Modern Apartment" },
+  // { id: 3, name: "Cozy Cottage" },
   // Add more properties as needed
 ];
 

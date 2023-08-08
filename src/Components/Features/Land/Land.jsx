@@ -9,10 +9,10 @@ export default function Land() {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className="container-1">
         <div className="land-container">
-          <div></div>
-          <div className="heading">
+          <div className="land-hero"></div>
+          <div className="heading-main">
             <h1 className="heading-main-title">FAJUYI ESTATE</h1>
             <h2 className="heading-sub-title">Eco-Friendly Land</h2>
             <p className="para-text">
@@ -20,7 +20,6 @@ export default function Land() {
               rays of the sun creates <br />a breathtaking tapestry that
               celebrates the beauty and abundance of our precious land."
             </p>
-            <button className="booking-btn"> Reserve a Plot</button>
           </div>
           <div className="lands-container">
             <div className="prop-details">
@@ -31,6 +30,7 @@ export default function Land() {
               <p className="sub-para">
                 Price: N7M <br /> Type: Service Estate
               </p>
+              <button className="booking-btn"> Reserve a Plot</button>
             </div>
             <div className="land-image">
               <img src="/images/land-image.png" alt="Land Image" />

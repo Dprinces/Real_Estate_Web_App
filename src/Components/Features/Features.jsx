@@ -13,12 +13,12 @@ export default function Features() {
           </p>
         </div>
         <div className="grid-two">
-          <Link to="/land">
+          <Link to="/fajuyiLand">
             <img src="/images/Land.png" alt="Land pics" />
           </Link>
         </div>
         <div className="grid-three">
-          <Link to="/house">
+          <Link to="/fajuyiHouse">
             <img src="/images/House.png" alt="House pics" />
           </Link>
         </div>
