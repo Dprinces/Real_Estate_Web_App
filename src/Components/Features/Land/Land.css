@@ -11,8 +11,20 @@
   border: 3px solid rgba(246, 248, 250);
 }
 
+.listing-container {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  padding: 4rem 2rem 2rem;
+  border-top-right-radius: 2%;
+  border-top-left-radius: 2%;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+  box-shadow:
+    4px -4px 4px rgba(0, 0, 0, 0.2), 
+    -4px -4px 4px rgba(0, 0, 0, 0.2);
+
+}
+
 .land-hero {
-  background-image: url("../../../public/images/land-hero.png");
+  background-image: url("../../../images/land-hero.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -38,7 +50,7 @@
   text-align: center;
   font-weight: 500;
   /* margin-top: 2rem; */
-  margin-bottom: 4.5rem;
+  margin-bottom: 1.5rem;
   background-color: #e7f6f4;
   /* background: #d9d9d9;  */
   border: 2px solid rgb(218, 220, 223);
@@ -127,9 +139,13 @@
 }
 
 .p-wrapper {
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.3);
   
   border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  margin-bottom: 3rem;
+  box-shadow:  4px 4px 4px rgba(0, 0, 0, 0.2), /* Bottom-left corner */
+    -4px 4px 4px rgba(0, 0, 0, 0.2); /* Bottom-right corner */;
   
 }
 

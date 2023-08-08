@@ -21,31 +21,32 @@ export default function Land() {
               celebrates the beauty and abundance of our precious land."
             </p>
           </div>
-          <div className="lands-container">
-            <div className="prop-details">
-              <p>
-                This prime piece of land offers a harmonious blend of
-                tranquillity, natural beauty, and endless possibilities
-              </p>
-              <p className="sub-para">
-                Price: N7M <br /> Type: Service Estate
-              </p>
-              <button className="booking-btn"> Reserve a Plot</button>
+          <div className="listing-container">
+            <div className="lands-container">
+              <div className="prop-details">
+                <p>
+                  This prime piece of land offers a harmonious blend of
+                  tranquillity, natural beauty, and endless possibilities
+                </p>
+                <p className="sub-para">
+                  Price: N7M <br /> Type: Service Estate
+                </p>
+                <button className="booking-btn"> Reserve a Plot</button>
+              </div>
+              <div className="land-image">
+                <img src="/images/land-image.png" alt="Land Image" />
+              </div>
             </div>
-            <div className="land-image">
-              <img src="/images/land-image.png" alt="Land Image" />
+            <div className="plots-wrapper">
+              <div className="current-plots">
+                {estateLand.map(({ id, img }) => (
+                  <div key={id} className="plot">
+                    <img src={img} alt="Available Plots of Land" />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-          <div className="plots-wrapper">
-            <div className="current-plots">
-              {estateLand.map(({ id, img }) => (
-                <div key={id} className="plot">
-                  <img src={img} alt="Available Plots of Land" />
-                </div>
-              ))}
-            </div>
-          </div>
-
           <div className="p-wrapper">
             <div className="p-payment-title">
               <h3>Our Payment Plan</h3>
