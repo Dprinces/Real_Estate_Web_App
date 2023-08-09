@@ -1,0 +1,39 @@
+.aboutus-container {
+    background: rgba(0, 138, 76, 0.65);
+}
+
+.aboutus-container img {
+    width: 100%;
+    height: 55vh;
+}
+.para-box {
+    justify-content: right;
+    text-align: justify;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 70%;
+}
+
+.aboutus-para {
+    color: white;
+    font-size: 19px;
+}
+
+
+.dashicons_awards {
+    border-radius: 100%;
+    background-color: #f7f7f7;
+    width: 93px;
+    height: 89px;
+    padding: 25px; 
+}
+
+.award-container {
+    text-align: center;
+}
+
+  .mission {
+    text-align: center;
+  }

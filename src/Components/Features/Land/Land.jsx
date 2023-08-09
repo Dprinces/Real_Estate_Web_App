@@ -117,7 +117,7 @@ export default function Land() {
       </div>
       <div class="more-info-wrapper">
         <div className="more-info-title">
-          <h2>See More</h2>
+          <h2>View More</h2>
         </div>
         <div className="two-lands">
           <img src="/images/eveperf-land.png" alt="Image 1" />

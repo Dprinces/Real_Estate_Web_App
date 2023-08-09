@@ -2,12 +2,18 @@
     background-image: url("../../../../public/images/property1.gif.GIF");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     width: 90%;
-    margin: 2.5rem auto 5rem 6%;
+    margin: 2.5rem auto 4rem 6%;
     opacity: 1;
+  }
+
+
+  .house-wrapper {
+     transform: translateY(30%);
+    
   }
 
   .house-title {
@@ -17,12 +23,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 8.9rem;
+   
   }
 
   .estate-features h2 {
     font-size: 24px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
   }
   
@@ -48,6 +54,10 @@
   }
 
 
+.bedroom-ter-wrapper {
+  display: flex;
+}
+
   .bedroom-display {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -65,3 +75,4 @@
   section {
     text-align: left;
   }
+

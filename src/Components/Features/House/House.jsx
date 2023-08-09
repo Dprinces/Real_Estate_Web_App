@@ -43,206 +43,166 @@ export default function House() {
             Your New <br /> House Address
           </h1>
           <p className="hero-text">
-            The perfect destination to live in harmony, a haven of tranquility set within a picturesque lush landscape. Welcome to nature's pride... <br />Welcome to Fajuyi Estate.
+            The perfect destination to live in harmony, a haven of tranquility
+            set within a picturesque lush landscape. Welcome to nature's
+            pride... <br />
+            Welcome to Fajuyi Estate.
           </p>
         </div>
-
       </div>
-      <section className="estate-features">
-        <h2>Estate Features</h2>
-        <div className="estate-features-container">
-          {estateFeatures.map(({ id, img, features }) => (
-            <div key={id} className="estate-feature">
-              <div className="icons">
-                <img src={img} alt="Estate Features Icons" />
+      <div className="est-wrapper">
+        <section className="estate-features">
+          <h2>Estate Features</h2>
+          <div className="estate-features-container">
+            {estateFeatures.map(({ id, img, features }) => (
+              <div key={id} className="estate-feature">
+                <div className="icons">
+                  <img src={img} alt="Estate Features Icons" />
+                </div>
+                <div className="icons-text">{features}</div>
               </div>
-              <div className="icons-text">{features}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-      <div>
-        <img
-          src="../../../../images/HouseDes1.png"
-          alt="Location icon" />
+            ))}
+          </div>
+        </section>
       </div>
-      <div className="description1">
-        <h1> 4 Bedroom Terrace</h1>
-        <ul>
-          <li>
-            Fitted Kitchen cabinets and counter tops, refrigerator, cooker, hob and microwave
-          </li>
-          <li>
-            Balconies wherever applicable as per unit plan
-          </li>
-          <li>
-            Wardrobes in the bedroom
-          </li>
-          <li>
-            Fully tiled bathrooms ensuite and guest toilet
-          </li>
-          <li>
-            Electrical shaver point with mirror in bathroom
-          </li><li>
-            Water Heater
-          </li><li>
-            Tall windows
-          </li>
-        </ul>
+      <div className="bedroom-ter-wrapper">
+        <div>
+          <img src="../../../../images/HouseDes1.png" alt="Location icon" />
+        </div>
+
+        <div className="description1">
+          <h1> 4 Bedroom Terrace</h1>
+          <ul>
+            <li>
+              Fitted Kitchen cabinets and counter tops, refrigerator, cooker,
+              hob and microwave
+            </li>
+            <li>Balconies wherever applicable as per unit plan</li>
+            <li>Wardrobes in the bedroom</li>
+            <li>Fully tiled bathrooms ensuite and guest toilet</li>
+            <li>Electrical shaver point with mirror in bathroom</li>
+            <li>Water Heater</li>
+            <li>Tall windows</li>
+          </ul>
+        </div>
+        </div>
         <h1>
           Price: N80M <br /> Type: Service Estate
         </h1>
-        <section className='bedroom-display'>
+        <section className="bedroom-display">
           <div>
-            <img
-              src="../../../../images/Bedroom1.png"
-              alt="Location icon" />
+            <img src="../../../../images/Bedroom1.png" alt="Location icon" />
           </div>
           <div>
-            <img
-              src="../../../../images/Bedroom2.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom3.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom4.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom5.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom6.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom7.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom8.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom9.png"
-              alt="Location icon" />
+            <img src="../../../../images/Bedroom2.png" alt="Location icon" />
           </div>
-</section>
-          <div className="p-wrapper">
-            <div className="p-payment-title">
-              <h3>Our Payment Plan</h3>
-            </div>
-            <div className="payment-plan-container">
-              <div className="payment-plan">
-                <button>Outright</button>
-                <button>6 Months</button>
-                <button>12 Months</button>
-                <button>18 Months</button>
-                <button>24 Months</button>
-                <button>38 Months</button>
-              </div>
+          <div>
+            <img src="../../../../images/Bedroom3.png" alt="Location icon" />
+          </div>
+          <div>
+            <img src="../../../../images/Bedroom4.png" alt="Location icon" />
+          </div>
+          <div>
+            <img src="../../../../images/Bedroom5.png" alt="Location icon" />
+          </div>
+          <div>
+            <img src="../../../../images/Bedroom6.png" alt="Location icon" />
+          </div>
+          <div>
+            <img src="../../../../images/Bedroom7.png" alt="Location icon" />
+          </div>
+          <div>
+            <img src="../../../../images/Bedroom8.png" alt="Location icon" />
+          </div>
+          <div>
+            <img src="../../../../images/Bedroom9.png" alt="Location icon" />
+          </div>
+        </section>
+        <div className="p-wrapper">
+          <div className="p-payment-title">
+            <h3>Our Payment Plan</h3>
+          </div>
+          <div className="payment-plan-container">
+            <div className="payment-plan">
+              <button>Outright</button>
+              <button>6 Months</button>
+              <button>12 Months</button>
+              <button>18 Months</button>
+              <button>24 Months</button>
+              <button>38 Months</button>
             </div>
           </div>
-        
+        </div>
+
         <div>
-          <img
-            src="../../../../images/HouseDes2.png"
-            alt="Location icon" />
+          <img src="../../../../images/HouseDes2.png" alt="Location icon" />
         </div>
         <h1> 3 Bedroom Terrace</h1>
         <ul>
           <li>
-            Fitted Kitchen cabinets and counter tops, refrigerator, cooker, hob and microwave
+            Fitted Kitchen cabinets and counter tops, refrigerator, cooker, hob
+            and microwave
           </li>
-          <li>
-            Balconies wherever applicable as per unit plan
-          </li>
-          <li>
-            Wardrobes in the bedroom
-          </li>
-          <li>
-            Fully tiled bathrooms ensuite and guest toilet
-          </li>
-          <li>
-            Electrical shaver point with mirror in bathroom
-          </li><li>
-            Water Heater
-          </li><li>
-            Tall windows
-          </li>
+          <li>Balconies wherever applicable as per unit plan</li>
+          <li>Wardrobes in the bedroom</li>
+          <li>Fully tiled bathrooms ensuite and guest toilet</li>
+          <li>Electrical shaver point with mirror in bathroom</li>
+          <li>Water Heater</li>
+          <li>Tall windows</li>
         </ul>
         <h1>
           Price: N80M <br /> Type: Service Estate
         </h1>
-        <section className='bedroom-display'>
+        <section className="bedroom-display">
           <div>
-            <img
-              src="../../../../images/Bedroom10.png"
-              alt="Location icon" />
+            <img src="../../../../images/Bedroom10.png" alt="Location icon" />
           </div>
           <div>
-            <img
-              src="../../../../images/Bedroom11.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom12.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom13.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom14.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom15.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom16.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom17.png"
-              alt="Location icon" />
-          </div><div>
-            <img
-              src="../../../../images/Bedroom18.png"
-              alt="Location icon" />
+            <img src="../../../../images/Bedroom11.png" alt="Location icon" />
           </div>
           <div>
-            <img
-              src="../../../../images/Bedroom19.png"
-              alt="Location icon" />
+            <img src="../../../../images/Bedroom12.png" alt="Location icon" />
           </div>
-          </section>
-          <div className="p-wrapper">
-            <div className="p-payment-title">
-              <h3>Our Payment Plan</h3>
-            </div>
-            <div className="payment-plan-container">
-              <div className="payment-plan">
-                <button>Outright</button>
-                <button>6 Months</button>
-                <button>12 Months</button>
-                <button>18 Months</button>
-                <button>24 Months</button>
-                <button>38 Months</button>
-              </div>
+          <div>
+            <img src="../../../../images/Bedroom13.png" alt="Location icon" />
+          </div>
+          <div>
+            <img src="../../../../images/Bedroom14.png" alt="Location icon" />
+          </div>
+          <div>
+            <img src="../../../../images/Bedroom15.png" alt="Location icon" />
+          </div>
+          <div>
+            <img src="../../../../images/Bedroom16.png" alt="Location icon" />
+          </div>
+          <div>
+            <img src="../../../../images/Bedroom17.png" alt="Location icon" />
+          </div>
+          <div>
+            <img src="../../../../images/Bedroom18.png" alt="Location icon" />
+          </div>
+          <div>
+            <img src="../../../../images/Bedroom19.png" alt="Location icon" />
+          </div>
+        </section>
+        <div className="p-wrapper">
+          <div className="p-payment-title">
+            <h3>Our Payment Plan</h3>
+          </div>
+          <div className="payment-plan-container">
+            <div className="payment-plan">
+              <button>Outright</button>
+              <button>6 Months</button>
+              <button>12 Months</button>
+              <button>18 Months</button>
+              <button>24 Months</button>
+              <button>38 Months</button>
             </div>
           </div>
-        
+        </div>
+
         <section>
-          <p>
-            Register Your Interest Today
-          </p>
+          <p>Register Your Interest Today</p>
           <form onSubmit={handleSubmit}>
             <label>Name</label>
             <input
@@ -293,7 +253,6 @@ export default function House() {
               <option value="36months">36 Months</option>
             </select>
 
-
             <label>Select a Preferred Contact Method</label>
             <select
               name="preferredContactMethod"
@@ -312,12 +271,15 @@ export default function House() {
             <button type="submit">Submit</button>
           </form>
           <div className="quick-r-btn">
-            <img src="/icons/whatsapp.png" alt="whatsapp" className="whatsapp-icon" />
+            <img
+              src="/icons/whatsapp.png"
+              alt="whatsapp"
+              className="whatsapp-icon"
+            />
             <button> Quick Response</button>
           </div>
         </section>
-      </div>
-
+      
 
       <Footer />
     </>
