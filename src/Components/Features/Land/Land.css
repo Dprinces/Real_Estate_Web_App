@@ -1,5 +1,6 @@
  .land-wrapper {
-  background-color: rgb(239, 243, 246);;
+  background-color: rgb(239, 243, 246);
+  height: 100%;
 } 
 
 .land-container {
@@ -80,18 +81,28 @@
   font-weight: 500;
 }
 
-.booking-btn {
+.booking-btn-one {
   border: none;
   background: transparent;
-  padding: 6px 6px 6px 6px;
+  padding: 6px 10px 6px 10px;
   font-size: 1.1rem;
   color: white;
   background: #008a4c;
   border-radius: 5px;
   transition: 0.3s all ease-out;
   cursor: pointer;
+  margin-top: 1rem;
   margin-bottom: 3.5rem;
+
 }
+
+.booking-btn-one:active {
+  transition: scale(1.96);
+  color: black;
+  font-weight: 500;
+}
+
+
 
 .lands-container {
   display: flex;
@@ -134,7 +145,7 @@
 }
 
 .sub-para {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   font-weight: 600;
 }
 
@@ -200,10 +211,11 @@
   font-weight: 500;
 }
 
-.estate-features {
-  margin-bottom: 3.5rem;
-}
 
+.est-wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
 
 
 .more-info-wrapper {
@@ -216,3 +228,54 @@
   margin-bottom: 1rem;
   font-size: 1rem;
 }
+
+.two-lands {
+ margin-bottom: 4rem;
+
+}
+
+
+.two-lands img {
+ padding-right: 3rem;
+
+}
+
+.text-left {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-right: 2rem;
+}
+
+
+.form-container .text-left {
+  /* max-width: 100%; */
+  display: block;
+  width: 23.125rem;
+height: 30.5625rem;
+transform: translateY(-7%);
+}
+
+.prefer-wrapper {
+   margin: 0 auto;
+   width: 80%;
+   margin-bottom: 10rem; 
+} 
+
+.btn-prefer {
+ display: block;
+  text-align: center;
+  
+   background-color: #008a4c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 0.625rem;
+  box-shadow: 0px 10px 4px 0px rgba(15, 169, 88, 0.5);
+  transition: 0.3s all ease-out;
+  padding: 0.8rem 3.125rem;
+  margin: 0.3rem 0.5rem;
+  width: 10rem;
+  margin-left: 20rem;
+
+  }

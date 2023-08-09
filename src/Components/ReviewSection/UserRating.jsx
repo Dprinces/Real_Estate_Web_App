@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './UserRating.css'
 
 const UserRating = () => {
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(5);
 
   const handleStarClick = (selectedRating) => {
     setRating(selectedRating);

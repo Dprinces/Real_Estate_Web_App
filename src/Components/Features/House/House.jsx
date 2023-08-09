@@ -63,7 +63,7 @@ export default function House() {
       </section>
       <div>
         <img
-          src="../../../../public/images/HouseDes1.png"
+          src="../../../../images/HouseDes1.png"
           alt="Location icon" />
       </div>
       <div className="description1">
@@ -92,46 +92,46 @@ export default function House() {
         <h1>
           Price: N80M <br /> Type: Service Estate
         </h1>
-        <section className='Bedroom-Display'>
+        <section className='bedroom-display'>
           <div>
             <img
-              src="../../../../public/images/Bedroom1.png"
+              src="../../../../images/Bedroom1.png"
               alt="Location icon" />
           </div>
           <div>
             <img
-              src="../../../../public/images/Bedroom2.png"
+              src="../../../../images/Bedroom2.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom3.png"
+              src="../../../../images/Bedroom3.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom4.png"
+              src="../../../../images/Bedroom4.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom5.png"
+              src="../../../../images/Bedroom5.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom6.png"
+              src="../../../../images/Bedroom6.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom7.png"
+              src="../../../../images/Bedroom7.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom8.png"
+              src="../../../../images/Bedroom8.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom9.png"
+              src="../../../../images/Bedroom9.png"
               alt="Location icon" />
           </div>
-
+</section>
           <div className="p-wrapper">
             <div className="p-payment-title">
               <h3>Our Payment Plan</h3>
@@ -147,10 +147,10 @@ export default function House() {
               </div>
             </div>
           </div>
-        </section>
+        
         <div>
           <img
-            src="../../../../public/images/HouseDes2.png"
+            src="../../../../images/HouseDes2.png"
             alt="Location icon" />
         </div>
         <h1> 3 Bedroom Terrace</h1>
@@ -178,50 +178,51 @@ export default function House() {
         <h1>
           Price: N80M <br /> Type: Service Estate
         </h1>
-        <section className='Bedroom-Display'>
+        <section className='bedroom-display'>
           <div>
             <img
-              src="../../../../public/images/Bedroom10.png"
+              src="../../../../images/Bedroom10.png"
               alt="Location icon" />
           </div>
           <div>
             <img
-              src="../../../../public/images/Bedroom11.png"
+              src="../../../../images/Bedroom11.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom12.png"
+              src="../../../../images/Bedroom12.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom13.png"
+              src="../../../../images/Bedroom13.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom14.png"
+              src="../../../../images/Bedroom14.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom15.png"
+              src="../../../../images/Bedroom15.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom16.png"
+              src="../../../../images/Bedroom16.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom17.png"
+              src="../../../../images/Bedroom17.png"
               alt="Location icon" />
           </div><div>
             <img
-              src="../../../../public/images/Bedroom18.png"
+              src="../../../../images/Bedroom18.png"
               alt="Location icon" />
           </div>
           <div>
             <img
-              src="../../../../public/images/Bedroom19.png"
+              src="../../../../images/Bedroom19.png"
               alt="Location icon" />
           </div>
+          </section>
           <div className="p-wrapper">
             <div className="p-payment-title">
               <h3>Our Payment Plan</h3>
@@ -237,7 +238,7 @@ export default function House() {
               </div>
             </div>
           </div>
-        </section>
+        
         <section>
           <p>
             Register Your Interest Today

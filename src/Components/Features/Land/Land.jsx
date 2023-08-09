@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Land.css";
 import { estateFeatures } from "../../../Pages/EstatePage/Data/EstateFeatures";
 import { estateLand } from "./Data/EstateLands";
@@ -6,6 +6,39 @@ import Navbar from "../../Common/Header/Navbar";
 import Footer from "../../Common/Footer/Footer";
 
 export default function Land() {
+
+  const [formData, setFormData] = useState({
+    Name: "",
+    email: "",
+    tel: "",
+    noofplots: "",
+    paymentplans: "",
+    preferredContactMethod: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+
+    setFormData({
+      Name: "",
+      email: "",
+      tel: "",
+      noofplots: "",
+      paymentplans: "",
+      preferredContactMethod: "",
+      
+    });
+  };
+
   return (
     <>
       <Navbar />
@@ -31,7 +64,7 @@ export default function Land() {
                 <p className="sub-para">
                   Price: N7M <br /> Type: Service Estate
                 </p>
-                <button className="booking-btn"> Reserve a Plot</button>
+                <button className="booking-btn-one"> Make a Reservation</button>
               </div>
               <div className="land-image">
                 <img src="/images/land-image.png" alt="Land Image" />
@@ -62,34 +95,128 @@ export default function Land() {
               </div>
             </div>
           </div>
-          <section className="estate-features">
-            <h2>Estate Features</h2>
-            <div className="estate-features-container">
-              {estateFeatures.map(({ id, img, features }) => (
-                <div>
-                  <div key={id} className="estate-feature">
-                    <div className="icons">
-                      <img src={img} alt="Estate Features Icons" />
-                    </div>
+          <div className="est-wrapper">
+            <section className="estate-features">
+              <h2>Estate Features</h2>
+              <div className="estate-features-container">
+                {estateFeatures.map(({ id, img, features }) => (
+                  <div>
+                    <div key={id} className="estate-feature">
+                      <div className="icons">
+                        <img src={img} alt="Estate Features Icons" />
+                      </div>
 
-                    <div className="icons-text">{features}</div>
+                      <div className="icons-text">{features}</div>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </section>
+                ))}
+              </div>
+            </section>
+          </div>
         </div>
       </div>
       <div class="more-info-wrapper">
         <div className="more-info-title">
-          <h2>See more</h2>
+          <h2>See More</h2>
         </div>
-        <div className="">
+        <div className="two-lands">
           <img src="/images/eveperf-land.png" alt="Image 1" />
           <img src="/images/greenways-land.png" alt="Image 2" />
         </div>
       </div>
+      <div className="prefer-wrapper">
+        <div className="form-container">
+          <div className="text-left">
+            <div>
+              Let's Help you <br />
+              Priotize 
+              your <br />preferences
+            </div>
+          </div>
+          <form onSubmit={handleSubmit}>
+            <label>Name</label>
+            <input
+              type="text"
+              name="Name"
+              value={formData.Name}
+              onChange={handleChange}
+              placeholder="Enter your full name"
+              required
+            />
 
+            <label>Email</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Enter your email address"
+              required
+            />
+
+            <label>Tel.</label>
+            <input
+              type="tel"
+              name="tel"
+              value={formData.tel}
+              onChange={handleChange}
+              placeholder="Enter your phone number"
+              required
+            />
+
+            <label>No. of Plots</label>
+            <select
+              name="noofplots"
+              value={formData.noofplots}
+              onChange={handleChange}
+              required
+              className="select-one"
+            >
+              <option value="" disabled>
+                Select the number of plots
+              </option>
+              <option value="house">1</option>
+              <option value="apartment">2</option>
+              <option value="condo">3</option>
+            </select>
+
+            <label>Payment Plans</label>
+            <select
+              name="paymentplans"
+              value={formData.paymentplans}
+              onChange={handleChange}
+              required
+              className="select-one"
+            >
+              <option value="" disabled>
+                Select the payment plan
+              </option>
+              <option value="house">Outright</option>
+              <option value="apartment">6 Months</option>
+              <option value="condo">12 Months</option>
+              <option value="condo">18 Months</option>
+              <option value="condo">24 Months</option>
+              <option value="condo">38 Months</option>
+            </select>
+
+            <label>Select a Preferred Contact Method</label>
+            <select
+              name="preferredContactMethod"
+              value={formData.preferredContactMethod}
+              onChange={handleChange}
+              className="select-one"
+              required
+            >
+              <option value="" disabled>
+                Select an option
+              </option>
+              <option value="phone">Phone</option>
+              <option value="email">Email</option>
+            </select>
+            <button type="submit" className="btn-prefer">Submit</button>
+          </form>
+        </div>
+      </div>
       <div className="resp-wrapper">
         <div className="quick-resp-btn">
           <a href="https://wa.me/08136154917" target="_blank">

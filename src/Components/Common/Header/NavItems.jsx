@@ -36,5 +36,10 @@ export const serviceDropdown = [
     path: "/fajuyiEstate",
     cName: "submenu-item",
   },
-  
+  {
+    id: 2,
+    title: "Eve Perfection Estate",
+    path: "/evepertection",
+    cName: "submenu-item",
+  },
 ];

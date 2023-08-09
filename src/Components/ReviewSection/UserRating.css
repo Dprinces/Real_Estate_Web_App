@@ -1,9 +1,9 @@
 .star {
   font-size: 30px; /* Adjust the size as needed */
-  color: clack;
+  color: rgb(172, 155, 55);
   cursor: pointer;
 }
 
 .star.selected {
-  color: green;
+  color: rgb(172, 155, 55);
 }

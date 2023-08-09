@@ -46,3 +46,22 @@
   .icons-text {
     font-size: 1.5rem;
   }
+
+
+  .bedroom-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  
+
+
+  }
+
+  .bedroom-display img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  section {
+    text-align: left;
+  }

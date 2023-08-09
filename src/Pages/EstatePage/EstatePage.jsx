@@ -3,6 +3,7 @@ import Navbar from "../../Components/Common/Header/Navbar";
 import { estateFeatures } from "./Data/EstateFeatures";
 import Footer from "../../Components/Common/Footer/Footer";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink} from "react-scroll";
 import ImageSlider from "./ImageSlider";
 import "./EstatePage.css";
 
@@ -47,16 +48,26 @@ export default function EstatePage() {
                 oke-baale along Iworoko Road, Ado, Ekiti State..
               </p>
 
-              <button className="map-btn">View Map</button>
+              <ScrollLink
+                activeClass="active"
+                to="targetSection"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <button className="map-btn">View Map</button>
+              </ScrollLink>
             </div>
           </div>
 
           <div className="btn-wrapper">
-            <Link to='/fajuyiLand'>
-            <button className="booking-btn">Reserve a plot</button>
+            <Link to="/fajuyiLand">
+              <button className="booking-btn">Reserve a plot</button>
             </Link>
-            <Link to='/fajuyiHouse'>
-            <button className="booking-btn">Own a house</button></Link>
+            <Link to="/fajuyiHouse">
+              <button className="booking-btn">Own a house</button>
+            </Link>
           </div>
 
           <section className="estate-features">
@@ -76,7 +87,7 @@ export default function EstatePage() {
             </div>
           </section>
 
-          <section className="map-wrapper">
+          <section className="map-wrapper" id="targetSection">
             <div className="map">
               <img src="/images/map.png" alt="A map" />
             </div>
@@ -88,14 +99,13 @@ export default function EstatePage() {
                     alt="whatsapp"
                     className="whatsapp-icon"
                   />
-                
-                <button className="resp-btn"> Quick Response</button>
+
+                  <button className="resp-btn"> Quick Response</button>
                 </a>
               </div>
             </div>
           </section>
         </main>
-        
       </div>
       <Footer />
     </>

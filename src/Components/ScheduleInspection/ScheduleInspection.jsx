@@ -183,7 +183,7 @@ export default function ScheduleInspection() {
               </div>
             </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit" className='btn-primary'>Submit</button>
           </form>
         </div>
       </div>
