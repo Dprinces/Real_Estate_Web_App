@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./Land.css";
 import { estateFeatures } from "../../../Pages/EstatePage/Data/EstateFeatures";
+import { Link as ScrollLink } from "react-scroll";
 import { estateLand } from "./Data/EstateLands";
 import Navbar from "../../Common/Header/Navbar";
 import Footer from "../../Common/Footer/Footer";
@@ -35,8 +36,25 @@ export default function Land() {
       noofplots: "",
       paymentplans: "",
       preferredContactMethod: "",
-      
     });
+    // Display styled alert pop-up
+    const alertContainer = document.createElement("div");
+    alertContainer.classList.add("alert");
+
+    const alertMessage = document.createElement("p");
+    alertMessage.classList.add("alert-message");
+    alertMessage.textContent = "Form submitted successfully. Kindly proceed to fill the schedule inspection form!";
+
+    const closeButton = document.createElement("button");
+    closeButton.classList.add("alert-button");
+    closeButton.textContent = "Close";
+    closeButton.addEventListener("click", () => {
+      document.body.removeChild(alertContainer);
+    });
+
+    alertContainer.appendChild(alertMessage);
+    alertContainer.appendChild(closeButton);
+    document.body.appendChild(alertContainer);
   };
 
   return (
@@ -64,7 +82,20 @@ export default function Land() {
                 <p className="sub-para">
                   Price: N7M <br /> Type: Service Estate
                 </p>
-                <button className="booking-btn-one"> Make a Reservation</button>
+
+                <ScrollLink
+                  activeClass="active"
+                  to="targetSection"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  <button className="booking-btn-one">
+                    {" "}
+                    Make a Reservation
+                  </button>
+                </ScrollLink>
               </div>
               <div className="land-image">
                 <img src="/images/land-image.png" alt="Land Image" />
@@ -124,13 +155,13 @@ export default function Land() {
           <img src="/images/greenways-land.png" alt="Image 2" />
         </div>
       </div>
-      <div className="prefer-wrapper">
+      <div className="prefer-wrapper" id="targetSection">
         <div className="form-container">
           <div className="text-left">
             <div>
               Let's Help you <br />
-              Priotize 
-              your <br />preferences
+              Priotize your <br />
+              preferences
             </div>
           </div>
           <form onSubmit={handleSubmit}>
@@ -213,7 +244,9 @@ export default function Land() {
               <option value="phone">Phone</option>
               <option value="email">Email</option>
             </select>
-            <button type="submit" className="btn-prefer">Submit</button>
+            <button type="submit" className="btn-prefer">
+              Submit
+            </button>
           </form>
         </div>
       </div>

@@ -279,3 +279,34 @@ transform: translateY(-7%);
   margin-left: 20rem;
 
   }
+
+  .alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 9999;
+}
+
+.alert-message {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.alert-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.alert-button:hover {
+  background-color: #0056b3;
+}
