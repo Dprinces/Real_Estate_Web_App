@@ -1,39 +1,119 @@
 .aboutus-container {
-    background: rgba(0, 138, 76, 0.65);
+  background: rgba(0, 138, 76, 0.65);
 }
 
-.aboutus-container img {
-    width: 100%;
-    height: 55vh;
+.aboutus-container .hero-image {
+  width: 100%;
+  height: 55vh;
 }
+
 .para-box {
-    justify-content: right;
-    text-align: justify;
-    padding-left: 3rem;
-    padding-right: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    width: 70%;
+  justify-content: right;
+  text-align: justify;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  width: 70%;
+  line-height: 1.6;
 }
 
 .aboutus-para {
-    color: white;
-    font-size: 19px;
-}
-
-
-.dashicons_awards {
-    border-radius: 100%;
-    background-color: #f7f7f7;
-    width: 93px;
-    height: 89px;
-    padding: 25px; 
+  color: white;
+  font-size: 18px;
 }
 
 .award-container {
-    text-align: center;
+  position: relative;
+  width: 100%;
 }
 
-  .mission {
-    text-align: center;
-  }
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.award-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.award-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  top: 84%;
+  background-color: #008a4c;
+  width: 100%;
+  height: 3.5px;
+}
+
+.award-sub-txt {
+  font-size: 18px;
+  color: white;
+}
+
+
+.grid-container {
+  margin: 10px 0 0 420px;
+  width: 50%;
+  
+}
+
+.box-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+}
+
+
+.dashicon-one-img {
+    width: 77px;
+    height: 77px;
+     border-radius: 100%;
+    background-color: #fff;
+   padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+ .center-circle {
+     transform: translate(130%, 50%);
+}
+
+
+
+.box {
+  width: 280px;
+  border: 1px solid rgb(12, 12, 12); 
+  padding: 40px 20px;  
+  height: 260px;
+  margin-right: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+} 
+
+.box-text {
+    text-transform: uppercase;
+    color: #FFF;
+    line-height: 1.3;    
+} 
+
+
+.mission {
+  text-align: center;
+  margin-top: 100px;
+}

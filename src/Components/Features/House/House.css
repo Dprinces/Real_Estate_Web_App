@@ -1,78 +1,180 @@
 .house-container {
-    background-image: url("../../../../public/images/property1.gif.GIF");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    margin: 2.5rem auto 4rem 6%;
-    opacity: 1;
-  }
+  background-image: url("../../../../public/images/property1.gif.GIF");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 2.5rem auto 4rem 6%;
+  opacity: 1;
+}
 
+.house-wrapper {
+  transform: translateY(30%);
+}
 
-  .house-wrapper {
-     transform: translateY(30%);
-    
-  }
+.house-title {
+  color: white;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-  .house-title {
-    color: white;
-    font-size: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-   
-  }
+.estate-features h2 {
+  font-size: 24px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
 
-  .estate-features h2 {
-    font-size: 24px;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-  .estate-features-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .estate-feature {
-    margin: 10px; 
-  }
-  
-  .icons img{
-    width: 30px;
-    height: 30px;
-    margin-left: 22px;
-    align-items: center;
-  }
-  
-  .icons-text {
-    font-size: 1.5rem;
-  }
+.estate-features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.estate-feature {
+  margin: 10px;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  margin-left: 22px;
+  align-items: center;
+}
+
+.icons-text {
+  font-size: 1.5rem;
+}
 
 .bedroom-ter-wrapper {
   display: flex;
+  margin-top: 55px;
+  gap: 60px;
+  justify-content: center;
+  position: relative;
 }
 
-  .bedroom-display {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+.description-heading {
+  background-color: #008A4C;
+  padding: 10px;
+  color: white;
+  width: max-content;
+  margin-bottom: 10px;
+}
+
+.description1 ul li {
+  list-style-type: none;
+  display: flex;
+
+}
+
+.checkbox-list li {
+  padding: 8px 0;
+}
+
+.custom-checkbox:checked {
+  background-color: #bdd8ba;
+}
+
+.description1 ul li input[type="checkbox"] {
+  padding: 18px;
+ 
+}
+
+label {
+  padding-left: 18px;
+}
+
+.custom-checkbox {
+  width: 10px;
+  height: 10px;
+  margin-top: 2px;
+   /* appearance: none; */
+  /* -webkit-appearance: none; */
   
+  
+}
 
 
-  }
 
-  .bedroom-display img {
-    max-width: 100%;
-    height: auto;
-  }
 
-  section {
-    text-align: left;
-  }
+/* Custom checkbox styling */
+.custom-checkbox + .custom-checkbox-label:before {
+  content: "";
+  display: inline-block;
+  width: 20px; /* Checkbox width */
+  height: 20px; /* Checkbox height */
+  border: 2px solid #ccc; /* Checkbox border color */
+  margin-right: 8px;
+  background-color: white; /* Checkbox background color */
+  padding: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: absolute;
+  left: 49.9%;
+  right: ;
+}
 
+.custom-checkbox:checked + .custom-checkbox-label:before {
+  content: "\2714"; /* Unicode character for a check mark */
+  font-size: 14px; /* Adjust the font size as needed */
+  color: #fff; /* Color of the check mark */
+  /* background-color: #2196F3;  */
+  border: 2px solid #2196F3; /* Border color when checked */
+  position: absolute;
+}
+
+/* Style for checked custom checkboxes */
+.custom-checkbox:checked + .custom-checkbox-label:before {
+  background-color: #2196F3; /* Change this to your preferred background color */
+}
+
+/* Style for custom checkboxes when clicked */
+.custom-checkbox:checked + .custom-checkbox-label:before:active {
+  background-color: #fffefa; /* Change this to the desired background color when clicked */
+}
+
+.bedroom-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.bedroom-display img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bedroom-building {
+width: 618px;
+height: 365px;
+
+
+
+}
+
+section {
+  text-align: left;
+}
+
+
+.custom-checkbox + .custom-checkbox-label:before {
+  content: "";
+  display: inline-block;
+  width: 18px; /* Checkbox width */
+  height: 18px; /* Checkbox height */
+  border: 2px solid #ccc; /* Checkbox border color */
+  background-color: white; /* Checkbox background color */
+  vertical-align: middle;
+  margin-right: 8px; /* Spacing between checkbox and text */
+  cursor: pointer;
+}
+
+/* Style for checked custom checkboxes */
+.custom-checkbox:checked + .custom-checkbox-label:before {
+  background-color: #76d54d; /* Change this to your preferred background color */
+}
