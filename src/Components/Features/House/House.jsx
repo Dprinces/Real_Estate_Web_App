@@ -78,7 +78,7 @@ export default function House() {
           <div className="description-heading">
             <h1> 4 Bedroom Terrace</h1>
           </div>
-          <ul className="checkbox-list">
+          {/* <ul className="checkbox-list">
             <li>
               <input
                 type="checkbox"
@@ -164,7 +164,14 @@ export default function House() {
               />
               <label for="windows">Tall windows</label>
             </li>
-          </ul>
+          </ul> */}
+
+          <div>
+            <input type="checkbox" id='check' />
+            <label htmlFor="check">Check</label>
+          </div>
+
+
         </div>
       </div>
       <h1>

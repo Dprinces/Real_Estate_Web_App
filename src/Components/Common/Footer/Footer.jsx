@@ -60,7 +60,7 @@ export default function Footer() {
             </p>
             <p> contact@homeofhonor.com </p>
 
-            <p>+234 700 1234567</p>
+            <p>+234 700 XXXXXXX</p>
 
             <hr />
 
