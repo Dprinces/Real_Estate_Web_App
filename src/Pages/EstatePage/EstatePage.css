@@ -87,13 +87,14 @@ text-align: center;
 margin-top: 1.7rem;
 margin-bottom: 5rem;
 transition: all 0.3sec ease;
-
+ cursor: pointer;
 }
 
 .booking-btn:active {
   transition: scale(1.96);
   color: black;
   font-weight: 500;
+ 
 }
 
 

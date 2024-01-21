@@ -247,6 +247,14 @@
 }
 
 
+
+
+.prefer-wrapper {
+   margin: 0 auto;
+   width: 80%;
+   margin-bottom: 10rem; 
+} 
+
 .form-container .text-left {
   /* max-width: 100%; */
   display: block;
@@ -255,11 +263,6 @@ height: 30.5625rem;
 transform: translateY(-7%);
 }
 
-.prefer-wrapper {
-   margin: 0 auto;
-   width: 80%;
-   margin-bottom: 10rem; 
-} 
 
 .btn-prefer {
  display: block;
