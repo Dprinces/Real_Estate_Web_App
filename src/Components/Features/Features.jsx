@@ -4,8 +4,8 @@ import "./Features.css";
 
 export default function Features() {
   return (
-    <>
-      <div className="grid-container">
+    
+      <div className="grid-container-main">
         <div className="grid-one">
           <p className="primary">
             Our primary goal is to facilitate your journey towards becoming one
@@ -23,6 +23,6 @@ export default function Features() {
           </Link>
         </div>
       </div>
-    </>
+    
   );
 }
